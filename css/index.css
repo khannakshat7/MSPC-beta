@@ -5,6 +5,9 @@ html {
 .p-0 {
 	padding: 0;
 }
+.mb-0 {
+	margin-bottom: 0;
+}
 /*  navbar  */
 .navbar-light .navbar-nav .nav-link {
 	color: #707070;
@@ -151,6 +154,10 @@ html {
 	height: 80vh;
 	width: 100%;
 }
+.leftside img {
+	height:70vh;
+	width: 100%;
+}
 
 .headiv2{
 	font-size: 10vh;
@@ -159,13 +166,15 @@ html {
 
 }
 .div2text{
-   font-size: 4vh;
+   font-size: 3vh;
    color: #707070;
    font-weight: 100;
    word-spacing: 2vh;
-  
 }
 
+#div2{
+	padding: 20px;
+}
 .div3head{
 	font-size: 10vh;
 	color: #707070;
@@ -178,7 +187,7 @@ html {
  }
  @media only screen and (max-width: 600px) {
 	.third-div {
-		margin-top: 80vh;
+		margin-top: 33vh;
 	}
 }
  
@@ -188,7 +197,7 @@ html {
 .page-footer{
 	background-color:#EDEDED ;
 	max-width: 100%;
-	margin-top:5vh;
+	margin-top:15vh;
 }
 .footer-text{
 	text-align:center;
