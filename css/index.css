@@ -67,6 +67,24 @@ html {
 	padding-bottom: 3em;
 }
 
+/* EVENT.HTML START*/
+.title-pad{
+	padding-top: 2%;
+}
+.date-pad{
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+}
+.bg-event{
+	background: url("img\Background.svg");
+	background-repeat: repeat;
+}
+.event_card{
+	background-color: inherit;
+	border: 0px;
+}
+
+/* EVENT.HTML END */
 .scroll-down-dude:before,
 .scroll-down-dude:after {
 	content: '';
@@ -146,4 +164,3 @@ html {
 	}
 }
 /* end  Scroll */
-
