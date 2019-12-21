@@ -37,6 +37,10 @@ html {
 	margin: 0;
 	width: 100%;
 	height: 100vh;
+	background-image: url('Page 1 circle.svg'), url('Page 1 mini circle.svg'), url('Page 1 Left Bottom.svg'), url('Page 1 Right Top.svg'), url('Page 1 Right Bottom.svg');
+	background-size: 80% 80%, 40% 40%, 40% 40%, 40% 40%, 40% 40% ;
+    background-position: center, left top, left bottom, right top, right bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
 }
 .centered1,
 .centered2,
@@ -229,6 +233,14 @@ html {
 	width: 100%;
 }
 
+
+.rightside{
+	background-image: url('Page 2 circle.svg');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: contain;
+}
+
 .headiv2{
 	font-size: 10vh;
 	color: #707070;
@@ -263,6 +275,10 @@ html {
 
 .domains{
 	margin-top: 5vh;
+	background-image: url('Page 3 Triangle.svg'), url('Page 3 circle.svg');
+	background-size: contain ;
+    background-position: right center, left center;
+    background-repeat: no-repeat, no-repeat;
 }
 .page-footer{
 	background-color:#EDEDED ;
