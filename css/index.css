@@ -5,6 +5,9 @@ html {
 .p-0 {
 	padding: 0;
 }
+.mb-0 {
+	margin-bottom: 0;
+}
 /*  navbar  */
 .navbar-light .navbar-nav .nav-link {
 	color: #707070;
@@ -34,6 +37,10 @@ html {
 	margin: 0;
 	width: 100%;
 	height: 100vh;
+	background-image: url('Page 1 circle.svg'), url('Page 1 mini circle.svg'), url('Page 1 Left Bottom.svg'), url('Page 1 Right Top.svg'), url('Page 1 Right Bottom.svg');
+	background-size: 80% 80%, 40% 40%, 40% 40%, 40% 40%, 40% 40% ;
+    background-position: center, left top, left bottom, right top, right bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
 }
 .centered1,
 .centered2,
@@ -67,6 +74,76 @@ html {
 	padding-bottom: 3em;
 }
 
+/* EVENT.HTML START*/
+
+.events_body{
+	background: url("img\Background.svg");
+}
+
+.title-pad{
+	padding-top: 2%;
+}
+.date-pad{
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+}
+.bg-event{
+	background: url("img\Background.svg");
+	background-repeat: repeat;
+}
+.event_card{
+	background-color: inherit;
+	border: 0px;
+	min-height: 360px;
+}
+.events_btn_img, .events_btn_cer,.events_btn_img_stda{
+	background-color: #00bfff;
+	margin-top: 0px;
+	color: white;
+	font-weight: 500;
+	cursor: pointer;
+	line-height: 40px;
+	border: 0;
+	border-radius: 40px;
+	box-shadow: rgba(0, 191, 255, 0) 0 7px 5px;
+	min-width: 35px;
+}
+.events_btn_img {
+	position: absolute;
+	left: 12%;
+	bottom: 5%;
+	padding: 0 35px;
+}
+
+.events_btn_cer{
+	position: absolute;
+	right: 12%;
+	bottom: 5%;
+	padding: 0 25px;
+}
+
+.events_btn_img_stda{
+	position: absolute;
+	bottom: 5%;
+	padding: 0 35px;
+	text-align: center;
+	/* margin: 0 auto;
+	display:block; */
+}
+
+.up_card{
+	min-height: 350px;
+	background: #f2f2f2;
+	border: 0px;
+}
+
+.bg-upcard{
+		min-height: 328px;
+		background: rgb(215, 215, 215);
+		border: 0px;
+}
+
+/* EVENT.HTML END */
 .scroll-down-dude:before,
 .scroll-down-dude:after {
 	content: '';
@@ -151,6 +228,17 @@ html {
 	height: 80vh;
 	width: 100%;
 }
+.leftside img {
+	height:70vh;
+	width: 100%;
+}
+
+.rightside{
+	background-image: url('Page 2 circle.svg');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: contain;
+}
 
 .headiv2{
 	font-size: 10vh;
@@ -159,13 +247,15 @@ html {
 
 }
 .div2text{
-   font-size: 4vh;
+   font-size: 3vh;
    color: #707070;
    font-weight: 100;
    word-spacing: 2vh;
-  
 }
 
+#div2{
+	padding: 20px;
+}
 .div3head{
 	font-size: 10vh;
 	color: #707070;
@@ -178,24 +268,28 @@ html {
  }
  @media only screen and (max-width: 600px) {
 	.third-div {
-		margin-top: 80vh;
+		margin-top: 33vh;
 	}
 }
- 
+
 .domains{
 	margin-top: 5vh;
+	background-image: url('Page 3 Triangle.svg'), url('Page 3 circle.svg');
+	background-size: contain ;
+    background-position: right center, left center;
+    background-repeat: no-repeat, no-repeat;
 }
 .page-footer{
 	background-color:#EDEDED ;
 	max-width: 100%;
-	margin-top:5vh;
+	margin-top:15vh;
 }
 .footer-text{
 	text-align:center;
 	color: #707070;
 	font-weight: 300;
 	font-size: 4vh;
-	
+
 }
 
 .page-footer img {
@@ -204,4 +298,3 @@ html {
 	margin-left: 10px;
 	margin-right: 10px;
 }
-
