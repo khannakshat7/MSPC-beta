@@ -1,0 +1,19 @@
+.galleryheading{
+	font-size: 10vh;
+	color: #707070;
+	font-weight: 700;
+}
+
+.courses{
+	margin-top: 50px;
+}
+
+.course-img{
+	padding: 20px;
+}
+
+.courses-text{
+color: #707070;
+font-size: 4vh;
+font-weight: 700;
+font-family: 'Indie Flower', cursive;}
