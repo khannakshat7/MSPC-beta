@@ -91,6 +91,7 @@ html {
 	background-color: inherit;
 	border: 0px;
 	min-height: 360px;
+	margin-top: 10%;
 }
 .events_btn_img, .events_btn_cer,.events_btn_img_stda{
 	background-color: #00bfff;
@@ -137,6 +138,17 @@ html {
 		min-height: 328px;
 		background: rgb(215, 215, 215);
 		border: 0px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.event_card{
+		min-height: 475px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.event_card{
+		min-height: 425px;
+	}
 }
 
 /* EVENT.HTML END */
