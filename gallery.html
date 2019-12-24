@@ -17,39 +17,63 @@
   </script>
  </head>
 <body>
+
+  <!-- start navabr -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav text ml-auto nav-fill w-100" >
-            <li class="nav-item active">
-                <a class="nav-link active" href="index.html">Home</a>
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html" >Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Team</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Events</a>
+                <a class="nav-link" href="events.html">Events</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
+            <li class="nav-item active">
+                <a class="nav-link active" href="gallery.html">Gallery</a>
             </li>
         </ul>
     </div>
 </nav>
-<div  class="galleryheading text-center" style="margin-top: 100px">
+
+<!-- end navbar -->
+
+<div  class="galleryheading text-center">
     <span>Event Gallery</span>
   </div>
 
-<br>
-<br>
+  <!-- start carousel-->
+  <div class="container mt-3 carousel-1">
+    <div class="container carousel-2">
+  <div id="carouselExampleSlidesOnly" class="carousel slide mt-3" data-ride="carousel" >
+  <div class="carousel-inner banner">
+    <div class="carousel-item  active">
+      <img class="d-block w-100 img-fluid" src="img/meeting.jpg" alt="First slide" >
+    </div>
+    <div class="carousel-item" >
+      <img class="d-block w-100 img-fluid" src="img/meeting.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 img-fluid" src="img/meeting.jpg" alt="Third slide">
+    </div>
+  </div>
+</div>
+</div>
+</div>
 
-  <div class="container">
+<!--end carousel-->
+
+
+  <div class="container mt-5">
     <div class="row">
-        <div class="col-6">
-            <div class="card bg-light" >
+        <div class="col-12 col-md-6 ">
+            <div class="card bg-light " >
   <img src="img/meeting.jpg" class="card-img-top course-img" alt="...">
   <div class="card-body">
     <p class="card-text text-center courses-text">Blockchain and Decentralized
@@ -58,8 +82,8 @@ AI Workshop
   </div>
 </div>
         </div>
-         <div class="col-6">
-            <div class="card bg-light" >
+         <div class="col-12 col-md-6 space-top ">
+            <div class="card bg-light space-top" >
   <img src="img/meeting.jpg" class="card-img-top course-img" alt="...">
   <div class="card-body">
     <p class="card-text text-center courses-text">Azure DevOps</p>
@@ -68,7 +92,7 @@ AI Workshop
         </div>
     </div>
     <div class="row courses">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
             <div class="card bg-light" >
   <img src="img/meeting.jpg" class="card-img-top course-img" alt="...">
   <div class="card-body">
@@ -78,8 +102,8 @@ Ethical Hacking
   </div>
 </div>
         </div>
-         <div class="col-6">
-            <div class="card bg-light" >
+         <div class="col-12 col-md-6 space-top">
+            <div class="card bg-light space-top" >
   <img src="img/meeting.jpg" class="card-img-top course-img" alt="...">
   <div class="card-body">
     <p class="card-text text-center courses-text">CodeStruck 1.0</p>
@@ -88,7 +112,7 @@ Ethical Hacking
         </div>
     </div>
     <div class="row courses">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
             <div class="card bg-light">
   <img src="img/meeting.jpg" class="card-img-top course-img" alt="...">
   <div class="card-body">
@@ -98,8 +122,8 @@ ML Basics
   </div>
 </div>
         </div>
-         <div class="col-6">
-            <div class="card bg-light" >
+         <div class="col-12 col-md-6 space-top">
+            <div class="card bg-light space-top" >
   <img src="img/meeting.jpg" class="card-img-top course-img" alt="...">
   <div class="card-body">
     <p class="card-text text-center courses-text">Interactive Coding
@@ -109,16 +133,16 @@ Workshop</p>
         </div>
     </div>
     <div class="row courses">
-        <div class="col-6">
-            <div class="card bg-light">
+        <div class="col-12 col-md-6">
+            <div class="card bg-light ">
  <img src="img/meeting.jpg" class="card-img-top course-img" alt="...">  <div class="card-body">
     <p class="card-text text-center courses-text">Data Science and
 ML Basics</p>
   </div>
 </div>
         </div>
-         <div class="col-6">
-            <div class="card bg-light">
+         <div class="col-12 col-md-6 space-top">
+            <div class="card bg-light space-top">
   <img src="img/meeting.jpg" class="card-img-top course-img" alt="...">
   <div class="card-body">
     <p class="card-text text-center courses-text">Imagine Talks</p>
@@ -130,16 +154,16 @@ ML Basics</p>
 <footer class="page-footer">
     <div class="text-center container">
         <p class="footer-text p-0 mb-0"> Contact Us</p>
-        <a href="mailto:hello@MicrosoftClubSRM.com" class="tooltipped" data-position="top" data-tooltip="Mail"><img
+        <a href="mailto:contact@msclubsrm.in" class="tooltipped" data-position="top" data-tooltip="Mail"><img
             src="img/twitter.svg" alt="mail"></a>
     
-    <a href="https://www.facebook.com/MSTCSRM/" class="tooltipped" data-position="top"
+    <a href="https://www.facebook.com/mspcsrm/" class="tooltipped" data-position="top"
         data-tooltip="Facebook"><img src="img/facebook.svg" alt="fb"></a>
     
-    <a href="https://www.instagram.com/MSTCsrm/" class="tooltipped" data-position="top"
+    <a href=" https://www.instagram.com/mspcsrm/" class="tooltipped" data-position="top"
         data-tooltip="Instagram"><img src="img/instagram.svg" alt="instagram"></a>
     
-    <a href="https://www.linkedin.com/company/mstc-srm/" class="tooltipped" data-position="top"
+    <a href="https://www.linkedin.com/company/mspc-srm/" class="tooltipped" data-position="top"
         data-tooltip="LinkedIn"><img src="img/linkedin.svg" alt="linkedin"></a>
         <br>
         <br>
@@ -148,5 +172,8 @@ ML Basics</p>
 
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
