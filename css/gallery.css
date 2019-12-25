@@ -1,0 +1,42 @@
+.galleryheading{
+	font-size: 10vh;
+	color: #707070;
+	font-weight: 700;
+	margin-top: 75px
+}
+
+.courses{
+	margin-top: 50px;
+}
+
+.course-img{
+	padding: 20px;
+}
+
+.carousel-1{
+	background-color: rgba(198,198,198,0.26);
+}
+
+.carousel-2{
+	padding-top: 10px;padding-bottom: 20px;
+}
+
+
+.courses-text{
+color: #707070;
+font-size: 3vh;
+font-weight: 700;
+font-family: 'Indie Flower', cursive;}
+
+.banner{
+	height:450px;
+}
+
+@media screen and (max-width: 767px) {
+ .space-top{
+ 	margin-top:22px;
+ }
+ .banner{
+ 	height:auto;
+ }
+}
