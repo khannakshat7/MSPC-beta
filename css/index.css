@@ -77,7 +77,11 @@ html {
 /* EVENT.HTML START*/
 
 .events_body{
-	background: url("img\Background.svg");
+	background-image: url('Page 3 Triangle.svg'), url('Page 3 circle.svg'),  url('Page 2 circle.svg');
+	background-size: contain ;
+	background-position: right bottom, right top, left center;
+	background-repeat: no-repeat, no-repeat, no-repeat;
+
 }
 
 .title-pad{
@@ -98,7 +102,7 @@ html {
 	margin-top: 10%;
 }
 .events_btn_img, .events_btn_cer,.events_btn_img_stda{
-	background-color: #00bfff;
+	background-color: #bfbfbf;
 	margin-top: 0px;
 	color: white;
 	font-weight: 500;
@@ -128,8 +132,16 @@ html {
 	bottom: 5%;
 	padding: 0 35px;
 	text-align: center;
-	/* margin: 0 auto;
-	display:block; */
+}
+
+.events_btn_img:hover{
+	background-color: #00bfff;
+}
+.events_btn_cer:hover{
+	background-color: #00bfff;
+}
+.events_btn_img_stda:hover{
+	background-color: #00bfff;
 }
 
 .up_card{
