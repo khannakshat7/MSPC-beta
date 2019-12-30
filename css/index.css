@@ -81,8 +81,8 @@ html {
 	background-size: contain ;
 	background-position: right bottom, right top, left center;
 	background-repeat: no-repeat, no-repeat, no-repeat;
-
 }
+
 
 .title-pad{
 	padding-top: 2%;
@@ -164,6 +164,9 @@ html {
 @media only screen and (max-width: 600px) {
 	.event_card{
 		min-height: 425px;
+	}
+	#block{
+		min-height: 460px;
 	}
 }
 
