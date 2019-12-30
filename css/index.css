@@ -75,20 +75,22 @@ html {
 }
 
 /* EVENT.HTML START*/
+.title_text{
+  color: #707070;
+  padding-top: 2%;
+	font-weight: 700;
+	font-size: 8vh;
+}
 
 .card_body_text{
 	font-size: 1rem;
 	color: #707070;
-	font-weight: 500;
+	font-weight: 400;
 	word-spacing: 2vh;
 	line-height: 0.5cm;
 }
 
 .events_body{
-	background-image: url('Page 3 Triangle.svg'), url('Page 3 circle.svg'),  url('Page 2 circle.svg');
-	background-size: contain ;
-	background-position: right bottom, right top, left center;
-	background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 
@@ -100,13 +102,17 @@ html {
 	padding-bottom: 2.5%;
 }
 .bg-event{
-	background: url("img\Background.svg");
-	background-repeat: repeat;
+	background-image: url('Page 3 Triangle.svg'), url('Page 2 circle.svg');
+	background-size: auto;
+	background-position: left bottom,center;
+	background-repeat: no-repeat,  no-repeat;
+	/* background: url("img\Background.svg");
+	background-repeat: repeat; */
 }
 .event_card{
 	background-color: inherit;
 	border: 0px;
-	min-height: 360px;
+	min-height: 380px;
 	margin-top: 10%;
 }
 .events_btn_img, .events_btn_cer,.events_btn_img_stda{
