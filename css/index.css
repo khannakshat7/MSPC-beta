@@ -91,13 +91,7 @@ html {
 }
 
 .events_body{
-
-	background-image: url('Page 3 Triangle.svg'), url('Page 3 circle.svg'),  url('Page 2 circle.svg');
-	background-size: contain ;
-	background-position: right bottom, right top, left center;
-	background-repeat: no-repeat, no-repeat, no-repeat;
-
-
+}
 
 
 .title-pad{
@@ -118,9 +112,7 @@ html {
 .event_card{
 	background-color: inherit;
 	border: 0px;
-
-	min-height: 360px;
-
+	min-height: 380px;
 	margin-top: 10%;
 }
 .events_btn_img, .events_btn_cer,.events_btn_img_stda{
@@ -187,11 +179,10 @@ html {
 	.event_card{
 		min-height: 425px;
 	}
-
 	#block{
 		min-height: 460px;
 	}
-
+}
 
 /* EVENT.HTML END */
 .scroll-down-dude:before,
@@ -323,31 +314,10 @@ html {
 	}
 }
 
-@media only screen and (max-width: 500px) {
-	.div3img{
-		display: none;
-}
-	
-}
-
-@media only screen and (min-width: 500px) {
-	.div3slider{
-		display: none;
-}	
- }
-  .div3img{
-	
-	margin-left: auto;
-	margin-right: auto;
-	width: 70%;
-	height: 70%;
-	margin-top: none;
-} 
-  
 .domains{
 	margin-top: 5vh;
 	background-image: url('Page 3 Triangle.svg'), url('Page 3 circle.svg');
-	background-size: 70% 70% ;
+	background-size: contain ;
     background-position: right center, left center;
     background-repeat: no-repeat, no-repeat;
 }
@@ -355,10 +325,6 @@ html {
 	background-color:#EDEDED ;
 	max-width: 100%;
 	margin-top:15vh;
-}
-.carousel-item{
-	height: 100%;
-	width: 100%;
 }
 .footer-text{
 	text-align:center;
