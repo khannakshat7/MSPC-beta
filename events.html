@@ -7,11 +7,11 @@
    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
    <!-- bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   <link rel="stylesheet" type="text/css" href="css/index.css" />
+   <link rel="stylesheet" type="text/css" href="css\events.css" />
  </head>
 <body class="events_body">
 <!-- start navabr -->
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light  fixed-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -36,9 +36,23 @@
 <!-- end navbar -->
 
 <!-- start first div -->
+<div class="first-div">
+  <div class="centered-logo">
+    <img src="img/logo-blue.svg" alt="our logo">
+  </div>
+  <div class="centered1">
+    <span>Welcome</span>
+  </div>
+  <p class="centered2"><span class="name"></span></p>
+  <a href="#div2">
+    <div class="scroll-down-dude"></div>
+  </a>
+</div>
 <!-- end first div -->
+<div id="div2"></div>
+
 <div class="container">
-  <h1 class="text-center" style="padding-top: 2%;">UPCOMING EVENTS</h1>
+  <h1 class="text-center title_text">UPCOMING EVENTS</h1>
   <div class="card up_card">
     <div class="card-body">
       <h5>NAME OF THE UPCOMING EVENT</h5>
@@ -58,12 +72,12 @@
       </div>
     </div>
   </div>
-  <h1 class="text-center" style="padding-top: 2%;">PREVIOUS EVENTS</h1>
+  <h1 class="text-center title_text">PREVIOUS EVENTS</h1>
   <div class="bg-event">
     <div class="row" style="padding-top:2%;">
       <!-- PREVIOUS EVENTS -->
       <div class="col-sm-12 col-md-6">
-        <div class="card event_card">
+        <div class="card event_card card_body_text" id="block">
           <div class="card-body">
             <img class="mx-auto d-block" src="img\Bitcoin vector.svg">
             <h5 class="card-title  text-center title-pad">BLOCKCHAIN & DECENTRAILZED AI WORKSHOP</h5>
@@ -75,7 +89,7 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-6">
-        <div class="card event_card">
+        <div class="card event_card card_body_text">
           <div class="card-body">
             <img class="mx-auto d-block" src="img\Azure vector.svg">
             <h5 class="card-title  text-center title-pad">INTRODUCTON TO AZURE DEVOPS</h5>
@@ -87,7 +101,7 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-6">
-        <div class="card event_card">
+        <div class="card event_card card_body_text">
           <div class="card-body">
             <img class="mx-auto d-block" src="img\App Security Vector.svg">
             <h5 class="card-title  text-center title-pad">APPLICATION SECURITY & ETHICAL HACKING</h5>
@@ -99,7 +113,7 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-6">
-        <div class="card event_card">
+        <div class="card event_card card_body_text">
           <div class="card-body">
             <img class="mx-auto d-block" src="img\Code struck Vector.svg">
             <h5 class="card-title  text-center title-pad">CODESTRUCK 1.0</h5>
@@ -111,7 +125,7 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-6">
-        <div class="card event_card">
+        <div class="card event_card card_body_text">
           <div class="card-body">
             <img class="mx-auto d-block" src="img\DS ML vector.svg">
             <h5 class="card-title  text-center title-pad">DATA SCIENCE AND MACHINE LEARNING BASIC</h5>
@@ -124,7 +138,7 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-6">
-        <div class="card event_card">
+        <div class="card event_card card_body_text">
           <div class="card-body">
             <img class="mx-auto d-block" src="img\interaction vect.svg">
             <h5 class="card-title  text-center title-pad">INTERACTIVE CODING LEARNING WORKSHOP</h5>
@@ -137,7 +151,7 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-6">
-        <div class="card event_card">
+        <div class="card event_card card_body_text">
           <div class="card-body">
             <img class="mx-auto d-block" src="img\MSI vector.svg">
             <h5 class="card-title  text-center title-pad">MSI CAMPUS MEET</h5>
@@ -150,7 +164,7 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-6">
-        <div class="card event_card">
+        <div class="card event_card card_body_text">
           <div class="card-body">
             <img class="mx-auto d-block" src="img\talk vector.svg">
             <h5 class="card-title  text-center title-pad">IMAGINE TALKS</h5>
@@ -170,24 +184,26 @@
         <p class="footer-text p-0 mb-0"> Contact Us</p>
         <a href="mailto:contact@msclubsrm.in" class="tooltipped" data-position="top" data-tooltip="Mail"><img
             src="img/email.svg" alt="mail"></a>
-    
+
     <a href="https://www.facebook.com/mspcsrm/" class="tooltipped" data-position="top"
         data-tooltip="Facebook"><img src="img/facebook.svg" alt="fb"></a>
-    
+
     <a href=" https://www.instagram.com/mspcsrm/" class="tooltipped" data-position="top"
         data-tooltip="Instagram"><img src="img/instagram.svg" alt="instagram"></a>
-    
+
     <a href="https://www.linkedin.com/company/mspc-srm/" class="tooltipped" data-position="top"
         data-tooltip="LinkedIn"><img src="img/linkedin.svg" alt="linkedin"></a>
         <br>
         <br>
         <p class="footer-text p-0 mb-0">© 2019 Copyright</p>
-        
+
 
     </div>
 </footer>
 <!-- scripts -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script>var typed = new Typed('.name', { strings: ["Home of Microsoft Student Partners Club SRM", ""], typeSpeed: 40, backSpeed: 40, loop: true }); </script>
+
 <!-- bootstrap -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
