@@ -203,6 +203,26 @@ html {
 	}
 }
 
+@media only screen and (max-width: 500px) {
+	.div3img{
+		display: none;
+}
+	
+}
+
+@media only screen and (min-width: 500px) {
+	.div3slider{
+		display: none;
+}	
+ }
+  .div3img{
+	
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	height: 60%;
+} 
+
 .domains{
 	margin-top: 5vh;
 	background-image: url('Page 3 Triangle.svg'), url('Page 3 circle.svg');
