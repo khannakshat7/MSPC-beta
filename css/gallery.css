@@ -20,17 +20,14 @@ img{
 	padding: 20px;
 }
 
-
-
-
 .courses-text{
 color: #707070;
 font-size: 3vh;
 font-weight: 700;
 font-family: 'Indie Flower', cursive;}
 
-
-
-@media screen and (max-width: 767px) {
+.carousel-item{
+	max-height: 300px !important;
+	min-height: 200px !important;
 
 }
