@@ -74,117 +74,6 @@ html {
 	padding-bottom: 3em;
 }
 
-/* EVENT.HTML START*/
-.title_text{
-  color: #707070;
-  padding-top: 2%;
-	font-weight: 700;
-	font-size: 8vh;
-}
-
-.card_body_text{
-	font-size: 1rem;
-	color: #707070;
-	font-weight: 400;
-	word-spacing: 2vh;
-	line-height: 0.5cm;
-}
-
-.events_body{
-}
-
-
-.title-pad{
-	padding-top: 2%;
-}
-.date-pad{
-	padding-top: 2.5%;
-	padding-bottom: 2.5%;
-}
-.bg-event{
-	background-image: url('Page 3 Triangle.svg'), url('Page 2 circle.svg');
-	background-size: auto;
-	background-position: left bottom,center;
-	background-repeat: no-repeat,  no-repeat;
-	/* background: url("img\Background.svg");
-	background-repeat: repeat; */
-}
-.event_card{
-	background-color: inherit;
-	border: 0px;
-	min-height: 380px;
-	margin-top: 10%;
-}
-.events_btn_img, .events_btn_cer,.events_btn_img_stda{
-	background-color: #bfbfbf;
-	margin-top: 0px;
-	color: white;
-	font-weight: 500;
-	cursor: pointer;
-	line-height: 40px;
-	border: 0;
-	border-radius: 40px;
-	box-shadow: rgba(0, 191, 255, 0) 0 7px 5px;
-	min-width: 35px;
-}
-.events_btn_img {
-	position: absolute;
-	left: 12%;
-	bottom: 5%;
-	padding: 0 35px;
-}
-
-.events_btn_cer{
-	position: absolute;
-	right: 12%;
-	bottom: 5%;
-	padding: 0 25px;
-}
-
-.events_btn_img_stda{
-	position: absolute;
-	bottom: 5%;
-	padding: 0 35px;
-	text-align: center;
-}
-
-.events_btn_img:hover{
-	background-color: #00bfff;
-}
-.events_btn_cer:hover{
-	background-color: #00bfff;
-}
-.events_btn_img_stda:hover{
-	background-color: #00bfff;
-}
-
-.up_card{
-	min-height: 350px;
-	background: #f2f2f2;
-	border: 0px;
-}
-
-.bg-upcard{
-		min-height: 328px;
-		background: rgb(215, 215, 215);
-		border: 0px;
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-	.event_card{
-		min-height: 475px;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	.event_card{
-		min-height: 425px;
-	}
-	#block{
-		min-height: 460px;
-	}
-}
-
-/* EVENT.HTML END */
 .scroll-down-dude:before,
 .scroll-down-dude:after {
 	content: '';
@@ -328,10 +217,10 @@ html {
  }
   .div3img{
 	
-	margin-left: auto;
+	margin-left: 13%;
 	margin-right: auto;
-	width: 60%;
-	height: 60%;
+	width: 80%;
+	height: 80%;
 } 
 
 .domains{
