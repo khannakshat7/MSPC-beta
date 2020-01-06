@@ -57,8 +57,8 @@ html {
 }
 .centered-logo img{
 	top:35%;
-	height: 30vh;
-	width:30vh;
+	height: 40vh;
+	width:40vh;
 }
 .centered2 {
 	top: 70%;
@@ -217,10 +217,10 @@ html {
  }
   .div3img{
 	
-	margin-left: auto;
+	margin-left: 13%;
 	margin-right: auto;
-	width: 60%;
-	height: 60%;
+	width: 80%;
+	height: 80%;
 } 
 
 .domains{
