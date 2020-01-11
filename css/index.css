@@ -57,8 +57,8 @@ html {
 }
 .centered-logo img{
 	top:35%;
-	height: 30vh;
-	width:30vh;
+	height: 40vh;
+	width:40vh;
 }
 .centered2 {
 	top: 70%;
@@ -202,6 +202,26 @@ html {
 		margin-top: 33vh;
 	}
 }
+
+@media only screen and (max-width: 500px) {
+	.div3img{
+		display: none;
+}
+	
+}
+
+@media only screen and (min-width: 500px) {
+	.div3slider{
+		display: none;
+}	
+ }
+  .div3img{
+	
+	margin-left: 13%;
+	margin-right: auto;
+	width: 80%;
+	height: 80%;
+} 
 
 .domains{
 	margin-top: 5vh;
