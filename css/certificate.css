@@ -88,6 +88,9 @@ html {
 	font-size: 8vh;
 	margin-top: 8%;
 }
+.form-control:focus{
+	box-shadow: none;
+}
 .regno{
 	margin-top: 10%;
 	border: 0px;
