@@ -1,0 +1,81 @@
+.teamheading{
+	font-size: 10vh;
+	color: #707070;
+	font-weight: 700;
+	margin-top: 75px
+}
+
+.events_btn_img{
+	background-color: #bfbfbf;
+	margin: 10px;
+	color: white;
+	font-weight: 500;
+	cursor: pointer;
+	line-height: 40px;
+	border: 0;
+	border-radius: 40px;
+	box-shadow: rgba(0, 191, 255, 0) 0 7px 5px;
+	width: 200px;
+}
+.events_btn_img:hover{
+	background-color: #00bfff;
+}
+.textht{
+
+}
+.techimg{
+	display: none;
+}
+.creativesimg{
+	display: none;
+}
+.primg{
+	display: none;
+}
+.sponsimg{
+	display: none;
+}
+.sections{
+    margin-top: 3%;
+}
+.cardtitle{
+	color: #707070;
+	font-weight: 700;
+}
+.members{
+    margin-top: 3%;
+}
+
+.card{
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.corebtn:active{
+	background-color:#02A4EF;
+}
+.cardimg{
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.cardtext{
+	margin-bottom: 10px;
+	padding: 10px;
+	min-height: 170px;
+}
+
+.cardfootimg{
+	height:30px;
+	width:30px;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.card{
+	min-height: 350px;
+}
