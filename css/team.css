@@ -4,7 +4,6 @@
 	font-weight: 700;
 	margin-top: 75px
 }
-
 .events_btn_img{
 	background-color: #bfbfbf;
 	margin: 10px;
@@ -58,9 +57,8 @@
 	border-radius: 50%;
 	height: 200px;
 	width: 200px;
-	
 	margin-bottom: 0;
-	margin-top: 0;
+	margin-top: 10px;
 }
 
 .cardtext{
