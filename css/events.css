@@ -8,6 +8,15 @@ html {
 .mb-0 {
 	margin-bottom: 0;
 }
+
+
+.event-p{
+	padding-bottom: 50px; text-align:justify-all;
+}
+
+.event-img{
+	background-size: cover;background-position: center; background-repeat: no-repeat;width: 100%;padding-bottom: 20px; padding-top: 2px;
+}
 /*  navbar  */
 .navbar-light .navbar-nav .nav-link {
 	color: #707070;
