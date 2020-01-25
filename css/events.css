@@ -304,7 +304,12 @@ html {
 	font-size: 4vh;
 
 }
-
+.card-bod{
+	padding: 5px;
+}
+.cardbtn{
+margin-top: 10px;
+}
 .page-footer img {
 	height: 35px;
 	width: 35px;
