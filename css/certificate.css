@@ -107,19 +107,18 @@ html {
 .page-footer{
 	background-color:#EDEDED ;
 	max-width: 100%;
-	margin-top:15vh;
+	margin-top:27vh;
 }
 .footer-text{
 	text-align:center;
 	color: #707070;
 	font-weight: 300;
-	font-size: 4vh;
-
+	font-size: 20px;
 }
 
 .page-footer img {
-	height: 50px;
-	width: 50px;
+	height: 30px;
+	width: 30px;
 	margin-left: 10px;
 	margin-right: 10px;
 }
