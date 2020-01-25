@@ -19,9 +19,6 @@
 .events_btn_img:hover{
 	background-color: #00bfff;
 }
-.textht{
-
-}
 .techimg{
 	display: none;
 }
@@ -50,7 +47,7 @@
    margin-bottom: 20px;
 }
 
-.corebtn:active{
+.corebtn{
 	background-color:#02A4EF;
 }
 .cardimg{

@@ -4,938 +4,1016 @@
 <head>
 
     <title>MSPC SRM - Microsoft Student Partners Club</title>
-    <link rel="icon" href="img/logo-blue.svg" type="image type"/>
+    <link rel="icon" href="img/logo-blue.svg" type="image type" />
     <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-      <script type="text/javascript" src="js/team.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <meta name="description" content="Check out the club members and see who is behind the success of the club.">
 
-   <!-- bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   <link rel="stylesheet" type="text/css" href="css/gallery.css" />
-      <link rel="stylesheet" type="text/css" href="css/index.css" />
-      <link rel="stylesheet" type="text/css" href="css/team.css" />
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/team.css" />
 
-  </script>
-  <body>
+    </script>
+
+<body>
 
     <!-- start navabr -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav text ml-auto nav-fill w-100" >
-              <li class="nav-item ">
-                  <a class="nav-link" href="index.html" >Home</a>
-              </li>
-              <li class="nav-item active">
-                  <a class="nav-link active" href="team.html">Team</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="events.html">Events</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-          </ul>
-      </div>
-  </nav>
-  
-  <!-- end navbar -->
-  <div  class="teamheading text-center">
-    <span>Our Team</span>
-  </div>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <div class="sections text-center">
-    <button type="button" id="corebtn" class="btn btn-primary events_btn_img corebtn" onclick="visFunction()">Core Team</button>
-    <button type="button" id="techbtn" class="btn btn-primary events_btn_img techbtn" onclick="visFunction1()">Technical</button>
-    <button type="button" id="creativesbtn" class="btn btn-primary events_btn_img creativesbtn" onclick="visFunction2()">Creatives</button>
-    <button type="button" id="prbtn" class="btn btn-primary events_btn_img prbtn" onclick="visFunction3()">Public Relations</button>
-    <button type="button" id="sponsbtn" class="btn btn-primary events_btn_img sponsbtn" onclick="visFunction4()">Sponsorship</button>
-  </div>
-<!-- core -->
-  <div class="members container coreimg" id="coreimg">
-      <div class="row">
-        <div class="col-12 col-md-3">
-            <div class="card bg-light shadow text-center">
-                <img class="card-img cardimg mx-auto" src="img/teamimg/shantnu.jpg" alt="shantnu-agarwal">
-                <div class="cardtext">
-                <h4 class="card-title cardtitle">Shantnu Agarwal</h4>
-                <h6 class="card-subtitle">Club Lead</h6>
-                <p class="card-text">"Search for Astroller27 on Youtube!"</p>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav text ml-auto nav-fill w-100">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link active" href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- end navbar -->
+    <div class="teamheading text-center">
+        <span>Our Team</span>
+    </div>
+
+    <div class="sections text-center">
+        <button type="button" id="corebtn" class="btn btn-primary events_btn_img corebtn" onclick="visFunction()">Core
+            Team</button>
+        <button type="button" id="techbtn" class="btn btn-primary events_btn_img techbtn"
+            onclick="visFunction1()">Technical</button>
+        <button type="button" id="creativesbtn" class="btn btn-primary events_btn_img creativesbtn"
+            onclick="visFunction2()">Creatives</button>
+        <button type="button" id="prbtn" class="btn btn-primary events_btn_img prbtn" onclick="visFunction3()">Public
+            Relations</button>
+        <button type="button" id="sponsbtn" class="btn btn-primary events_btn_img sponsbtn"
+            onclick="visFunction4()">Sponsorship</button>
+    </div>
+    <!-- core -->
+    <div class="members container coreimg" id="coreimg">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img cardimg mx-auto" src="img/teamimg/shantnu.jpg" alt="shantnu-agarwal">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Shantnu Agarwal</h4>
+                        <h6 class="card-subtitle">Club Lead</h6>
+                        <p class="card-text">"Search for Astroller27 on Youtube!"</p>
                     </div>
                     <div class="card-footer">
-                    <a href="https://github.com/shantnu-agarwal/" class="tooltipped" target="_blank" data-position="top" data-tooltip="github"><img
-                            src="img/github.svg"  class="cardfootimg" alt="mail"></a>
-                    
-                        
-                    <a href="https://www.linkedin.com/in/shantnuagarwal/"  target="_blank" class="tooltipped" data-position="top"
-                        data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg linkedorig" alt="linkedin"></a>
-                    <a href="https://www.youtube.com/channel/UCg528Q7WPukZ6ZuXf18nIlw" class="tooltipped" target="_blank" data-position="top" data-tooltip="Youtube"><img
-                            src="img/youtube.svg"  class="cardfootimg" alt="astroller27"></a>
-                      
+                        <a href="https://github.com/shantnu-agarwal/" class="tooltipped" target="_blank"
+                            data-position="top" data-tooltip="github"><img src="img/github.svg" class="cardfootimg"
+                                alt="mail"></a>
+
+
+                        <a href="https://www.linkedin.com/in/shantnuagarwal/" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg"
+                                class="cardfootimg linkedorig" alt="linkedin"></a>
+                        <a href="https://www.youtube.com/channel/UCg528Q7WPukZ6ZuXf18nIlw" class="tooltipped"
+                            target="_blank" data-position="top" data-tooltip="Youtube"><img src="img/youtube.svg"
+                                class="cardfootimg" alt="astroller27"></a>
+
                     </div>
+                </div>
+
             </div>
 
-        </div>
-
-        <div class="col-12 col-md-3">
-            <div class="card bg-light shadow text-center">
-                <img class="card-img-top cardimg mx-auto" src="img/teamimg/vrishank.jpg" alt="Card image">
-                <div class="cardtext">
-                <h4 class="card-title cardtitle">Vrishank Vajpayee</h4>
-                <h6 class="card-subtitle">Associate Club Lead</h6>
-                <p class="card-text">"If you need motivation for any work, leave it."</p>
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/vrishank.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Vrishank Vajpayee</h4>
+                        <h6 class="card-subtitle">Associate Club Lead</h6>
+                        <p class="card-text">"If you need motivation for any work, leave it."</p>
                     </div>
                     <div class="card-footer">
-                        <a href="https://www.github.com/vrishankvajpayee" class="tooltipped"  target="_blank" data-position="top" data-tooltip="Git"><img
-                            src="img/github.svg"  class="cardfootimg" alt="mail"></a>
-                
-                    <a href="https://www.linkedin.com/in/vrishank-v-359336103/"  target="_blank" class="tooltipped" data-position="top"
-                        data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                      </div>
+                        <a href="https://www.github.com/vrishankvajpayee" class="tooltipped" target="_blank"
+                            data-position="top" data-tooltip="Git"><img src="img/github.svg" class="cardfootimg"
+                                alt="mail"></a>
+
+                        <a href="https://www.linkedin.com/in/vrishank-v-359336103/" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+                    </div>
+                </div>
+
             </div>
 
-        </div>
-
-       
-
-        <div class="col-12 col-md-3">
-            <div class="card bg-light shadow text-center">
-                <img class="card-img-top cardimg mx-auto" src="img/teamimg/sneh.jpg" alt="Card image">
-                <div class="cardtext">
-                <h4 class="card-title cardtitle">Sneh Kumar</h4>
-                <h6 class="card-subtitle">Club Manager</h6>
-                <p class="card-text">"Go the extra mile .It's never crowded"</p>
-                    </div>
-                      <div class="card-footer">
-                      <a href="https://www.facebook.com/sneh.kumar.771"  target="_blank" class="tooltipped" data-position="top" data-tooltip="Mail"><img
-                          src="img/facebook.svg"  class="cardfootimg" alt="mail"></a>
-                  
-                 
-                    </div>
-
-                    
-            </div>
-
-        </div>
 
 
-  
-      <div class="col-12 col-md-3">
-          <div class="card bg-light shadow text-center">
-              <img class="card-img cardimg mx-auto" src="img/teamimg/subham.jpg" alt="shantnu-agarwal">
-              <div class="cardtext">
-              <h4 class="card-title cardtitle">Subham Rathore</h4>
-              <h6 class="card-subtitle">Club Manager</h6>
-              <p class="card-text">"Be your own hero."</p>
-                      </div>
-                       <div class="card-footer">
-                      <a href="https://www.facebook.com/batman.0796"  target="_blank" class="tooltipped" data-position="top" data-tooltip="Mail"><img
-                          src="img/facebook.svg"  class="cardfootimg" alt="mail"></a>
-                  
-                 
-                    </div>
-
-          </div>
-
-      </div>
-      <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/arya.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Arya Sekhar Bandopadhyay</h4>
-            <h6 class="card-subtitle">Technical Lead</h6>
-            <p class="card-text">"Your secrets are safe with me...I wasnt even listening "</p>
-                </div>
-                <div class="card-footer">
-                    <a href="https://www.github.com/aryasbandopadhyay" class="tooltipped" data-position="top" data-tooltip="Mail"><img
-                        src="img/github.svg"  class="cardfootimg" alt="Git"></a>
-                
-                <a href="https://www.facebook.com/arya.banerjee.35"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="Facebook"><img src="img/facebook.svg" class="cardfootimg" alt="fb"></a>
-                
-                
-                <a href="https://www.linkedin.com/in/arya-sekhar-bandopadhyay-0aa9ba172"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                  </div>
-        </div>
-
-    </div>
-
-      <div class="col-12 col-md-3">
-          <div class="card bg-light shadow text-center">
-              <img class="card-img-top cardimg mx-auto" src="img/teamimg/rubal.jpg" alt="Card image">
-              <div class="cardtext">
-              <h4 class="card-title cardtitle">Rubal Sharma</h4>
-              <h6 class="card-subtitle">Associate Corporate Lead</h6>
-              <p class="card-text">"Enjoy your life to the fullest."</p>
-                  </div>
-                   <div class="card-footer">
-                      <a href="https://www.facebook.com/rubalsharma1999"  target="_blank" class="tooltipped" data-position="top" data-tooltip="Mail"><img
-                          src="img/facebook.svg"  class="cardfootimg" alt="mail"></a>
-                           <a href="https://www.linkedin.com/in/rubal-sharma-5538b516a"  target="_blank" class="tooltipped" data-position="top"
-                        data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg linkedorig" alt="linkedin"></a>
-                  
-                 
-                    </div>
-                 
-          </div>
-
-      </div>
-
-      <div class="col-12 col-md-3">
-          <div class="card bg-light shadow text-center">
-              <img class="card-img-top cardimg mx-auto" src="img/teamimg/avirup.jpg" alt="Card image">
-              <div class="cardtext">
-              <h4 class="card-title cardtitle">Avirup Chattaraj</h4>
-              <h6 class="card-subtitle">Associate Technical Lead</h6>
-              <p class="card-text">"Do not go gentle into the good night, Old age should burn and rave at close of day; Rage, rage against the dying of light"</p>
-                  </div> 
-                   <div class="card-footer">
-                    
-                           <a href="https://www.linkedin.com/in/severussnape123"  target="_blank" class="tooltipped" data-position="top"
-                        data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg linkedorig" alt="linkedin"></a>
-                  
-                 
-                    </div>
-          </div>
-
-      </div>
-
-      <div class="col-12 col-md-3">
-          <div class="card bg-light shadow text-center">
-              <img class="card-img-top cardimg mx-auto" src="img/teamimg/himanshu.jpg" alt="Card image">
-              <div class="cardtext">
-              <h4 class="card-title cardtitle">Himanshu Rattan</h4>
-              <h6 class="card-subtitle">Associate Technical Lead</h6>
-              <p class="card-text">"What a time to be alive."</p>
-                  </div>
-                  <div class="card-footer">
-                      <a href="https://github.com/himanshurattan"  target="_blank" class="tooltipped" data-position="top" data-tooltip="Mail"><img
-                          src="img/github.svg"  class="cardfootimg" alt="mail"></a>
-                  
-                  <a href="https://www.linkedin.com/in/himanshu-rattan/"  target="_blank" class="tooltipped" data-position="top"
-                      data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                    </div>
-          </div>
-
-      </div>
-
-      <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/anisha.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Anisha Mohanty</h4>
-            <h6 class="card-subtitle">Associate Corporate Lead</h6>
-            <p class="card-text">"Don't let the colors fade to grey."</p>
-                </div>
-                <div class="card-footer">
-                    <a href="https://www.linkedin.com/in/anisha-mohanty-376986165"  target="_blank" class="tooltipped" data-position="top" data-tooltip="Mail"><img
-                        src="img/linkedin.svg"  class="cardfootimg" alt="mail"></a>
-                
-                  </div>
-        </div>
-
-    </div>
-
-
-    </div>
-</div>
-<!-- tech begins -->
-  <div class="members container techimg" id="techimg">
-    <div class="row">
-
-        
-      <div class="col-12 col-md-3">
-          <div class="card bg-light shadow text-center">
-              <img class="card-img cardimg mx-auto" src="img/teamimg/akshat.jpg" alt="Card image">
-              <div class="cardtext">
-              <h4 class="card-title cardtitle">Akshat Khanna</h4>
-              <h6 class="card-subtitle">Web Developer</h6>
-              <p class="card-text">"Google is my future!"</p>
-                  </div>
-                  <div class="card-footer">
-                      <a href="https://github.com/khannakshat7"  target="_blank" class="tooltipped" data-position="top" data-tooltip="Mail"><img
-                          src="img/github.svg"  class="cardfootimg" alt="mail"></a>
-                  
-                 
-                  
-                  <a href="https://www.linkedin.com/in/akshatkhanna7"  target="_blank" class="tooltipped" data-position="top"
-                      data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                    </div>
-          </div>
-
-      </div>
-
-      <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img cardimg mx-auto" src="img/teamimg/aayush.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Aayush Mehta</h4>
-            <h6 class="card-subtitle">Web Developer</h6>
-            <p class="card-text">"If you always do what you've always done, you'll always be what you've always been"</p>
-                </div>
-                <div class="card-footer">
-                    <a href="mailto:aayushmehta169@gmail.com" class="tooltipped"  target="_blank" data-position="top" data-tooltip="Mail"><img
-                        src="img/email.svg"  class="cardfootimg" alt="mail"></a>
-                
-               
-                
-                <a href="https://github.com/AayushMehta169" class="tooltipped"  target="_blank" data-position="top"
-                    data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"> </a>
-                
-                <a href="https://www.linkedin.com/in/aayush-mehta-27297a192/"   target="_blank"class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                  </div>
-        </div>
-
-    </div>
-
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img cardimg mx-auto" src="img/teamimg/aryan.jpeg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Aryan Nikhil</h4>
-            <h6 class="card-subtitle">Web Developer</h6>
-            <p class="card-text">"He alone, who owns the youth, gains the future."</p>
-                </div>
-                <div class="card-footer">
-                <a href="https://github.com/Violent-Idiot"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
-                
-                <a href="https://www.linkedin.com/in/aryan-nikhil-962666190/"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                  </div>
-        </div>
-
-    </div>
-
-    
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img cardimg mx-auto" src="img/teamimg/varun.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Varun Kondreddy</h4>
-            <h6 class="card-subtitle">Web Developer</h6>
-            <p class="card-text">"friendly nature"</p>
-                </div>
-                <div class="card-footer">
-                <a href="https://github.com/varunkondreddy"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
-                
-                <a href="https://www.linkedin.com/in/varun-kondreddy-64703416b"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                  </div>
-        </div>
-
-    </div>
-
-
-      <div class="col-12 col-md-3">
-          <div class="card bg-light shadow text-center">
-              <img class="card-img-top cardimg mx-auto" src="img/teamimg/arul.jpg" alt="Card image">
-              <div class="cardtext">
-              <h4 class="card-title cardtitle">Arul Saxena</h4>
-              <h6 class="card-subtitle">ML Developer</h6>
-              <p class="card-text">"Don't practice until you get it right. Practice until you can't get it wrong"</p>
-                  </div>
-                  <div class="card-footer">
-                    <a href="https://github.com/ArulSaxena"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
-
-                  <a href="https://www.linkedin.com/in/arul-saxena/"  target="_blank" class="tooltipped" data-position="top"
-                      data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                      
-                      <a href="https://www.instagram.com/arul__saxena/"  target="_blank" class="tooltipped" data-position="top"
-                      data-tooltip="Instagram"><img src="img/instagram.svg" class="cardfootimg" alt="instagram"></a>
-                    </div>
-          </div>
-
-      </div>
-
-      <div class="col-12 col-md-3">
-          <div class="card bg-light shadow text-center">
-              <img class="card-img-top cardimg mx-auto" src="img/teamimg/yashasvi.jpg" alt="Card image">
-              <div class="cardtext">
-              <h4 class="card-title cardtitle">Yashasvi Misra</h4>
-              <h6 class="card-subtitle">ML Developer</h6>
-              <p class="card-text">"Everybody wants to be a diamond but very few are willing to get cut!"</p>
-                  </div>
-                  <div class="card-footer">
-                      <a href="https://github.com/yashasvimisra2798"  target="_blank" class="tooltipped" data-position="top" data-tooltip="Mail"><img
-                          src="img/github.svg"  class="cardfootimg" alt="mail"></a>
-                  
-                 
-                    </div>
-          </div>
-
-      </div>
-
-      <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/mihir.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Mihir Singh</h4>
-            <h6 class="card-subtitle">ML Developer</h6>
-            <p class="card-text">"You can change what you do, but you can't change what you want."</p>
-                </div>
-                <div class="card-footer">
-                  <a href="https://github.com/mihirs16"  target="_blank" class="tooltipped" data-position="top"
-                  data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
-
-                <a href="https://www.linkedin.com/in/mihir-singh-456a5916a"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                    
-                   
-                  </div>
-        </div>
-
-    </div>
-
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/hrithik.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Hritik Bhandari</h4>
-            <h6 class="card-subtitle">ML Developer</h6>
-            <p class="card-text">"A Data Scientist in the making"</p>
-                </div>
-                <div class="card-footer">
-                  <a href="https://github.com/hritikbhandari"  target="_blank" class="tooltipped" data-position="top"
-                  data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
-
-                <a href="https://www.linkedin.com/in/hritikbhandari"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                    
-                   
-                  </div>
-        </div>
-
-    </div>
-
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/ariz.jpeg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Ariz Siddiqui</h4>
-            <h6 class="card-subtitle">ML Developer</h6>
-            <p class="card-text">"Never share your passwords with anyone."</p>
-                </div>
-                <div class="card-footer">
-                  <a href="https://github.com/arizsiddiqui"   target="_blank"class="tooltipped" data-position="top"
-                  data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
-
-                <a href="https://www.linkedin.com/in/mohd-ariz-siddiqui-15950918b/"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                    
-                   
-                  </div>
-        </div>
-
-    </div>
-
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/vipul.jpeg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Vipul Jain</h4>
-            <h6 class="card-subtitle">ML Developer</h6>
-            <p class="card-text">"Life is too small, live it to the fullest :)"</p>
-                </div>
-                <div class="card-footer">
-                  <a href="https://github.com/vipuljain-17"  target="_blank" class="tooltipped" data-position="top"
-                  data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
-
-                <a href="https://www.linkedin.com/in/vipul-jain-2000"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                    
-                   
-                  </div>
-        </div>
-
-    </div>
-
-   
-
-    
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/sachit.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Sachit Misra</h4>
-            <h6 class="card-subtitle">App Developer</h6>
-            <p class="card-text">"Swipe right"</p>
-                </div>
-                <div class="card-footer">
-                  <a href="https://github.com/SachitMisra"  target="_blank" class="tooltipped" data-position="top"
-                  data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
-
-                
-                   
-                  </div>
-        </div>
-
-    </div>
-
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/shivansh.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Shivansh Anand</h4>
-            <h6 class="card-subtitle">App Developer</h6>
-            <p class="card-text">"The best way to predict the future is to create it."</p>
-                </div>
-                <div class="card-footer">
-                  <a href="https://github.com/ShivanshAnand"  target="_blank" class="tooltipped" data-position="top"
-                  data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
-
-                <a href="https://www.linkedin.com/in/shivansh-anand-280865185"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                    
-                   
-                  </div>
-        </div>
-
-    </div>
-
-
-
-    </div>
-</div>
-<!-- tech ends -->
-<!-- creatives -->
-<div class="members container creativesimg" id="creativesimg">
-    <div class="row">
-        <div class="col-12 col-md-3">
-            <div class="card bg-light shadow text-center">
-                <img class="card-img-top cardimg mx-auto" src="img/teamimg/shushrut.jpg" alt="Card image">
-                <div class="cardtext">
-                <h4 class="card-title cardtitle">Shushrut Kumar</h4>
-                <h6 class="card-subtitle">Creatives</h6>
-                <p class="card-text">"Lost in this world, just trying to navigate."</p>
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/sneh.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Sneh Kumar</h4>
+                        <h6 class="card-subtitle">Club Manager</h6>
+                        <p class="card-text">"Go the extra mile .It's never crowded"</p>
                     </div>
                     <div class="card-footer">
-                      
-    
-                    <a href="https://www.linkedin.com/in/shushrut-kumar-3a793814a"  target="_blank" class="tooltipped" data-position="top"
-                        data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                        
-                       
-                      </div>
-            </div>
-    
-        </div>
-    
+                        <a href="https://www.facebook.com/sneh.kumar.771" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="Mail"><img src="img/facebook.svg" class="cardfootimg"
+                                alt="mail"></a>
 
-      <div class="col-12 col-md-3">
-          <div class="card bg-light shadow text-center">
-              <img class="card-img-top cardimg mx-auto" src="img/teamimg/shubhamdeep.png" alt="Card image">
-              <div class="cardtext">
-              <h4 class="card-title cardtitle">Shubhamdeep Jha</h4>
-              <h6 class="card-subtitle">Photography</h6>
-              <p class="card-text">"Good or bad it's all about perception ..."</p>
-                  </div>
-                  <div class="card-footer">
-                    <a href="https://github.com/TheDudeThatCode"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
-                  
-                  
-                  <a href="https://www.instagram.com/grambandhu?r=nametag"  target="_blank" class="tooltipped" data-position="top"
-                      data-tooltip="Instagram"><img src="img/instagram.svg" class="cardfootimg" alt="instagram"></a>
-                  
-                  <a href="https://in.linkedin.com/in/shubhamdeep-jha-b09678191?trk=public_profile_browsemap_mini-profile_title" class="tooltipped" data-position="top"
-                      data-tooltip="LinkedIn"  target="_blank"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
+
                     </div>
-          </div>
 
-      </div>
 
-      
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/shreyas.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Shreyas Datta</h4>
-            <h6 class="card-subtitle">Creatives</h6>
-            <p class="card-text">"Life is a dream for the wise, a game for the fool, a comedy for the rich, a tragedy for the poor."</p>
                 </div>
-                <div class="card-footer">
-                 
-                
-                
-                <a href="https://www.instagram.com/shreyas_yeetusbeetus"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="Instagram"><img src="img/instagram.svg" class="cardfootimg" alt="instagram"></a>
-                
-                  </div>
-        </div>
 
-    </div>
+            </div>
 
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/riddho.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Riddho Bhadra</h4>
-            <h6 class="card-subtitle">Creatives</h6>
-            <p class="card-text">"In Love with Design !!"</p>
+
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img cardimg mx-auto" src="img/teamimg/subham.jpg" alt="shantnu-agarwal">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Subham Rathore</h4>
+                        <h6 class="card-subtitle">Club Manager</h6>
+                        <p class="card-text">"Be your own hero."</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.facebook.com/batman.0796" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="Mail"><img src="img/facebook.svg" class="cardfootimg"
+                                alt="mail"></a>
+
+
+                    </div>
+
                 </div>
-                                <div class="card-footer">
-                 
-                
-                
-                <a href="#"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="Instagram"><img src="img/instagram.svg" class="cardfootimg" alt="instagram"></a>
-                
-                  </div>
-                
-        </div>
 
-    </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/arya.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Arya Sekhar Bandopadhyay</h4>
+                        <h6 class="card-subtitle">Technical Lead</h6>
+                        <p class="card-text">"Your secrets are safe with me...I wasnt even listening "</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.github.com/aryasbandopadhyay" class="tooltipped" data-position="top"
+                            data-tooltip="Mail"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
 
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/ashwin.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">S Ashwin Raja</h4>
-            <h6 class="card-subtitle">Creatives</h6>
-            <p class="card-text">"Bad choices make great stories"</p>
+                        <a href="https://www.facebook.com/arya.banerjee.35" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="Facebook"><img src="img/facebook.svg" class="cardfootimg"
+                                alt="fb"></a>
+
+
+                        <a href="https://www.linkedin.com/in/arya-sekhar-bandopadhyay-0aa9ba172" target="_blank"
+                            class="tooltipped" data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg"
+                                class="cardfootimg" alt="linkedin"></a>
+                    </div>
                 </div>
-                <div class="card-footer">
-                 
-                
-                
-                <a href="https://www.instagram.com/ashraja941/"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="Instagram"><img src="img/instagram.svg" class="cardfootimg" alt="instagram"></a>
-                
-                <a href="https://www.linkedin.com/in/ash-raja-68950918b"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                  </div>
-        </div>
 
-    </div>
+            </div>
 
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/pratyush.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Pratyush Bisht</h4>
-            <h6 class="card-subtitle">Creatives</h6>
-            <p class="card-text">"Tragedy Mein comedy"</p>
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/rubal.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Rubal Sharma</h4>
+                        <h6 class="card-subtitle">Associate Corporate Lead</h6>
+                        <p class="card-text">"Enjoy your life to the fullest."</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.facebook.com/rubalsharma1999" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="Mail"><img src="img/facebook.svg" class="cardfootimg"
+                                alt="mail"></a>
+                        <a href="https://www.linkedin.com/in/rubal-sharma-5538b516a" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg"
+                                class="cardfootimg linkedorig" alt="linkedin"></a>
+
+
+                    </div>
+
                 </div>
-                <div class="card-footer">
-                  
-                <a href="https://www.linkedin.com/in/pratyush-bisht-91b66918b"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                  </div>
-        </div>
 
-    </div>
+            </div>
 
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/jugal.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Jugal Lad</h4>
-            <h6 class="card-subtitle">Creatives</h6>
-            <p class="card-text">"Carpe Diem"</p>
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/avirup.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Avirup Chattaraj</h4>
+                        <h6 class="card-subtitle">Associate Technical Lead</h6>
+                        <p class="card-text">"Do not go gentle into the good night, Old age should burn and rave at
+                            close of day; Rage, rage against the dying of light"</p>
+                    </div>
+                    <div class="card-footer">
+
+                        <a href="https://www.linkedin.com/in/severussnape123" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg"
+                                class="cardfootimg linkedorig" alt="linkedin"></a>
+
+
+                    </div>
                 </div>
-                <div class="card-footer">
-                <a href="https://www.linkedin.com/in/jugal-lad-48153418b"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                  </div>
-        </div>
 
-    </div>
+            </div>
 
-    
-      
-    </div>
-</div>
-<!-- creatives ends -->
-<!-- pr -->
-<div class="members container primg" id="primg">
-    <div class="row">
-     
-      <div class="col-12 col-md-3">
-          <div class="card bg-light shadow text-center">
-              <img class="card-img-top cardimg mx-auto" src="img/teamimg/priyesh.jpeg" alt="Card image">
-              <div class="cardtext">
-              <h4 class="card-title cardtitle">Priyesh Sharan</h4>
-              <h6 class="card-subtitle">Corporate Executive</h6>
-              <p class="card-text">"A genuine measure of success is how many times you can bounce back from failure."</p>
-                  </div>
-                   <div class="card-footer">
-                   	 <a href="https://www.linkedin.com/in/priyesh-sharan-b54490180" class="tooltipped" data-position="top"
-                      data-tooltip="LinkedIn"  target="_blank"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                  
-                
-                  </div>
-                 
-          </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/himanshu.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Himanshu Rattan</h4>
+                        <h6 class="card-subtitle">Associate Technical Lead</h6>
+                        <p class="card-text">"What a time to be alive."</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/himanshurattan" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="Mail"><img src="img/github.svg" class="cardfootimg"
+                                alt="mail"></a>
 
-      </div>
-
-      <div class="col-12 col-md-3">
-          <div class="card bg-light shadow text-center">
-              <img class="card-img-top cardimg mx-auto" src="img/teamimg/shuv.jpg" alt="Card image">
-              <div class="cardtext">
-              <h4 class="card-title cardtitle">Shuvrajit Bhaduri</h4>
-              <h6 class="card-subtitle">Corporate Executive</h6>
-              <p class="card-text">"Luceat Lux Nostra"</p>
-                  </div>
-                   <div class="card-footer">
-                   	 <a href="https://in.linkedin.com/in/shuvrajit-bhaduri-666875155" class="tooltipped" data-position="top"
-                      data-tooltip="LinkedIn"  target="_blank"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                  
-                <a href="https://facebook.com/shuvrajit.bhaduri"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/facebook.svg" class="cardfootimg" alt="linkedin"></a>
-                  </div>
-                  
-          </div>
-
-      </div>
-
-     
-
-      <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/aditya.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Aditya Shukla</h4>
-            <h6 class="card-subtitle">Corporate Executive</h6>
-            <p class="card-text">"In pursuit of the extraordinary"</p>
+                        <a href="https://www.linkedin.com/in/himanshu-rattan/" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+                    </div>
                 </div>
-                <div class="card-footer">
-                  
-                <a href="https://www.linkedin.com/in/aditya-shukla-975940188"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                  </div>
-        </div>
 
-    </div>
+            </div>
 
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/naynika.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Naynika Madan</h4>
-            <h6 class="card-subtitle">Corporate Executive</h6>
-            <p class="card-text">"Confuse, don't abuse."</p>
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/anisha.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Anisha Mohanty</h4>
+                        <h6 class="card-subtitle">Associate Corporate Lead</h6>
+                        <p class="card-text">"Don't let the colors fade to grey."</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.linkedin.com/in/anisha-mohanty-376986165" target="_blank"
+                            class="tooltipped" data-position="top" data-tooltip="Mail"><img src="img/linkedin.svg"
+                                class="cardfootimg" alt="mail"></a>
+
+                    </div>
                 </div>
-                <div class="card-footer">
-                  
-                <a href="https://www.linkedin.com/in/naynikamadan"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                  </div>
-        </div>
 
-    </div>
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/shubhangi.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Shubhangi Soni</h4>
-            <h6 class="card-subtitle">ML Developer</h6>
-            <p class="card-text">'Error 404 : Motivational quote not found'</p>
-                </div>
-                <div class="card-footer">
-                  <a href="https://github.com/ShubhangiSoni1603"  target="_blank" class="tooltipped" data-position="top"
-                  data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
+            </div>
 
-                <a href="https://www.linkedin.com/in/shubhangi-soni"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                    
-                   
-                  </div>
-        </div>
 
-    </div>
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/priyanshy.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Priyanshy Sharma</h4>
-            <h6 class="card-subtitle">Corporate Executive</h6>
-            <p class="card-text">"What makes you happy right now?"</p>
-                </div>
-                <div class="card-footer">
-                  
-                <a href="https://www.linkedin.com/in/priyanshy-sharma-6a2910187"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                  </div>
-        </div>
-
-    </div>
-
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/nandita.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Nandita Mishra</h4>
-            <h6 class="card-subtitle">Corporate Executive</h6>
-            <p class="card-text">"Simple,kind, hardworking and dedicated."</p>
-                </div>
-                <div class="card-footer">
-                  
-                    <a href="https://github.com/nanditamishra"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
-                <a href="https://www.linkedin.com/in/nandita-mishra-94a69318b"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                  </div>
-        </div>
-
-    </div>
-
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/sinha.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Aryan Manish Sinha</h4>
-            <h6 class="card-subtitle">Corporate Executive</h6>
-            <p class="card-text">"On the back of this t-shirt is everything you need to know about me."</p>
-                </div>
-                <div class="card-footer">
-                  
-                <a href="https://www.linkedin.com/in/aryan-sinha-82595513a"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                  </div>
         </div>
     </div>
-   </div> 
-</div>
-<!-- pr ends -->
+    <!-- tech begins -->
+    <div class="members container techimg" id="techimg">
+        <div class="row">
 
-<!-- spons -->
-<div class="members container sponsimg" id="sponsimg">
-    <div class="row">
-      
-      
-      <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/apurva.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Apurva Gaurav</h4>
-            <h6 class="card-subtitle">Corporate Executive</h6>
-            <p class="card-text">"Optimistic Nibba🤘"</p>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img cardimg mx-auto" src="img/teamimg/akshat.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Akshat Khanna</h4>
+                        <h6 class="card-subtitle">Web Developer</h6>
+                        <p class="card-text">"Google is my future!"</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/khannakshat7" target="_blank" class="tooltipped" data-position="top"
+                            data-tooltip="Mail"><img src="img/github.svg" class="cardfootimg" alt="mail"></a>
+
+
+
+                        <a href="https://www.linkedin.com/in/akshatkhanna7" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+                    </div>
                 </div>
-                <div class="card-footer">
-                  
-                <a href="linkedin.com/in/theApurvaGaurav"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
 
-                    <a href="github.com/apurva2303"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
-                  </div>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img cardimg mx-auto" src="img/teamimg/aayush.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Aayush Mehta</h4>
+                        <h6 class="card-subtitle">Web Developer</h6>
+                        <p class="card-text">"If you always do what you've always done, you'll always be what you've
+                            always been"</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="mailto:aayushmehta169@gmail.com" class="tooltipped" target="_blank" data-position="top"
+                            data-tooltip="Mail"><img src="img/email.svg" class="cardfootimg" alt="mail"></a>
+
+
+
+                        <a href="https://github.com/AayushMehta169" class="tooltipped" target="_blank"
+                            data-position="top" data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg"
+                                alt="Git"> </a>
+
+                        <a href="https://www.linkedin.com/in/aayush-mehta-27297a192/" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img cardimg mx-auto" src="img/teamimg/aryan.jpeg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Aryan Nikhil</h4>
+                        <h6 class="card-subtitle">Web Developer</h6>
+                        <p class="card-text">"He alone, who owns the youth, gains the future."</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/Violent-Idiot" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg"
+                                alt="Git"></a>
+
+                        <a href="https://www.linkedin.com/in/aryan-nikhil-962666190/" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img cardimg mx-auto" src="img/teamimg/varun.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Varun Kondreddy</h4>
+                        <h6 class="card-subtitle">Web Developer</h6>
+                        <p class="card-text">"friendly nature"</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/varunkondreddy" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg"
+                                alt="Git"></a>
+
+                        <a href="https://www.linkedin.com/in/varun-kondreddy-64703416b" target="_blank"
+                            class="tooltipped" data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg"
+                                class="cardfootimg" alt="linkedin"></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/arul.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Arul Saxena</h4>
+                        <h6 class="card-subtitle">ML Developer</h6>
+                        <p class="card-text">"Don't practice until you get it right. Practice until you can't get it
+                            wrong"</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/ArulSaxena" target="_blank" class="tooltipped" data-position="top"
+                            data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
+
+                        <a href="https://www.linkedin.com/in/arul-saxena/" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+
+                        <a href="https://www.instagram.com/arul__saxena/" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="Instagram"><img src="img/instagram.svg"
+                                class="cardfootimg" alt="instagram"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/yashasvi.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Yashasvi Misra</h4>
+                        <h6 class="card-subtitle">ML Developer</h6>
+                        <p class="card-text">"Everybody wants to be a diamond but very few are willing to get cut!"</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/yashasvimisra2798" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="Mail"><img src="img/github.svg" class="cardfootimg"
+                                alt="mail"></a>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/mihir.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Mihir Singh</h4>
+                        <h6 class="card-subtitle">ML Developer</h6>
+                        <p class="card-text">"You can change what you do, but you can't change what you want."</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/mihirs16" target="_blank" class="tooltipped" data-position="top"
+                            data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
+
+                        <a href="https://www.linkedin.com/in/mihir-singh-456a5916a" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/hrithik.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Hritik Bhandari</h4>
+                        <h6 class="card-subtitle">ML Developer</h6>
+                        <p class="card-text">"A Data Scientist in the making"</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/hritikbhandari" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg"
+                                alt="Git"></a>
+
+                        <a href="https://www.linkedin.com/in/hritikbhandari" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/ariz.jpeg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Ariz Siddiqui</h4>
+                        <h6 class="card-subtitle">ML Developer</h6>
+                        <p class="card-text">"Never share your passwords with anyone."</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/arizsiddiqui" target="_blank" class="tooltipped" data-position="top"
+                            data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
+
+                        <a href="https://www.linkedin.com/in/mohd-ariz-siddiqui-15950918b/" target="_blank"
+                            class="tooltipped" data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg"
+                                class="cardfootimg" alt="linkedin"></a>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/vipul.jpeg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Vipul Jain</h4>
+                        <h6 class="card-subtitle">ML Developer</h6>
+                        <p class="card-text">"Life is too small, live it to the fullest :)"</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/vipuljain-17" target="_blank" class="tooltipped" data-position="top"
+                            data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
+
+                        <a href="https://www.linkedin.com/in/vipul-jain-2000" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/sachit.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Sachit Misra</h4>
+                        <h6 class="card-subtitle">App Developer</h6>
+                        <p class="card-text">"Swipe right"</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/SachitMisra" target="_blank" class="tooltipped" data-position="top"
+                            data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/shivansh.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Shivansh Anand</h4>
+                        <h6 class="card-subtitle">App Developer</h6>
+                        <p class="card-text">"The best way to predict the future is to create it."</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/ShivanshAnand" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg"
+                                alt="Git"></a>
+
+                        <a href="https://www.linkedin.com/in/shivansh-anand-280865185" target="_blank"
+                            class="tooltipped" data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg"
+                                class="cardfootimg" alt="linkedin"></a>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
         </div>
     </div>
+    <!-- tech ends -->
+    <!-- creatives -->
+    <div class="members container creativesimg" id="creativesimg">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/shushrut.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Shushrut Kumar</h4>
+                        <h6 class="card-subtitle">Creatives</h6>
+                        <p class="card-text">"Lost in this world, just trying to navigate."</p>
+                    </div>
+                    <div class="card-footer">
 
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/suhana.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Suhana Thakur </h4>
-            <h6 class="card-subtitle">Corporate Executive</h6>
-            <p class="card-text">"Sassy Soul."</p>
+
+                        <a href="https://www.linkedin.com/in/shushrut-kumar-3a793814a" target="_blank"
+                            class="tooltipped" data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg"
+                                class="cardfootimg" alt="linkedin"></a>
+
+
+                    </div>
                 </div>
-                <div class="card-footer">
-                  
-                <a href="https://www.linkedin.com/in/suhana-thakur-75b23718a"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                  </div>
-        </div>
 
-    </div>
+            </div>
 
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/dhulika.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Dhulika Mehta </h4>
-            <h6 class="card-subtitle">Corporate Executive</h6>
-            <p class="card-text">"Towards Infinity, Slowly and Steadily! Creating Name and Leaving Impression!"</p>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/shubhamdeep.png" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Shubhamdeep Jha</h4>
+                        <h6 class="card-subtitle">Photography</h6>
+                        <p class="card-text">"Good or bad it's all about perception ..."</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/TheDudeThatCode" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg"
+                                alt="Git"></a>
+
+
+                        <a href="https://www.instagram.com/grambandhu?r=nametag" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="Instagram"><img src="img/instagram.svg"
+                                class="cardfootimg" alt="instagram"></a>
+
+                        <a href="https://in.linkedin.com/in/shubhamdeep-jha-b09678191?trk=public_profile_browsemap_mini-profile_title"
+                            class="tooltipped" data-position="top" data-tooltip="LinkedIn" target="_blank"><img
+                                src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
+                    </div>
                 </div>
-                <div class="card-footer">
-                  
-                <a href="https://www.linkedin.com/in/dhulika-m-a799aa11b/"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                  </div>
-        </div>
 
-    </div>
+            </div>
 
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/vidushi.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Vidushi Gupta </h4>
-            <h6 class="card-subtitle">Corporate Executive</h6>
-            <p class="card-text">"You v/s You"</p>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/shreyas.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Shreyas Datta</h4>
+                        <h6 class="card-subtitle">Creatives</h6>
+                        <p class="card-text">"Life is a dream for the wise, a game for the fool, a comedy for the rich,
+                            a tragedy for the poor."</p>
+                    </div>
+                    <div class="card-footer">
+
+
+
+                        <a href="https://www.instagram.com/shreyas_yeetusbeetus" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="Instagram"><img src="img/instagram.svg"
+                                class="cardfootimg" alt="instagram"></a>
+
+                    </div>
                 </div>
-                <div class="card-footer">
-                    <a href="https://github.com/Vidushi-Gupta"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
-                <a href="https://www.linkedin.com/in/vidushi-gupta-84b9a0188"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
-                  </div>
-        </div>
 
-    </div>
+            </div>
 
-    <div class="col-12 col-md-3">
-        <div class="card bg-light shadow text-center">
-            <img class="card-img-top cardimg mx-auto" src="img/teamimg/sai.jpg" alt="Card image">
-            <div class="cardtext">
-            <h4 class="card-title cardtitle">Pavan Sai Kistamsetty</h4>
-            <h6 class="card-subtitle">Corporate Executive</h6>
-            <p class="card-text">"If hardwork is your weapon, success will be your slave.</p>
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/riddho.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Riddho Bhadra</h4>
+                        <h6 class="card-subtitle">Creatives</h6>
+                        <p class="card-text">"In Love with Design !!"</p>
+                    </div>
+                    <div class="card-footer">
+
+
+
+                        <a href="#" target="_blank" class="tooltipped" data-position="top" data-tooltip="Instagram"><img
+                                src="img/instagram.svg" class="cardfootimg" alt="instagram"></a>
+
+                    </div>
+
                 </div>
-                <div class="card-footer">
-                  
-                <a href="https://www.linkedin.com/in/pavan-sai-kistamsetty-69369618b"  target="_blank" class="tooltipped" data-position="top"
-                    data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
 
-                  
-                  </div>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/ashwin.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">S Ashwin Raja</h4>
+                        <h6 class="card-subtitle">Creatives</h6>
+                        <p class="card-text">"Bad choices make great stories"</p>
+                    </div>
+                    <div class="card-footer">
+
+
+
+                        <a href="https://www.instagram.com/ashraja941/" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="Instagram"><img src="img/instagram.svg"
+                                class="cardfootimg" alt="instagram"></a>
+
+                        <a href="https://www.linkedin.com/in/ash-raja-68950918b" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/pratyush.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Pratyush Bisht</h4>
+                        <h6 class="card-subtitle">Creatives</h6>
+                        <p class="card-text">"Tragedy Mein comedy"</p>
+                    </div>
+                    <div class="card-footer">
+
+                        <a href="https://www.linkedin.com/in/pratyush-bisht-91b66918b" target="_blank"
+                            class="tooltipped" data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg"
+                                class="cardfootimg" alt="linkedin"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/jugal.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Jugal Lad</h4>
+                        <h6 class="card-subtitle">Creatives</h6>
+                        <p class="card-text">"Carpe Diem"</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.linkedin.com/in/jugal-lad-48153418b" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
         </div>
     </div>
+    <!-- creatives ends -->
+    <!-- pr -->
+    <div class="members container primg" id="primg">
+        <div class="row">
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/priyesh.jpeg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Priyesh Sharan</h4>
+                        <h6 class="card-subtitle">Corporate Executive</h6>
+                        <p class="card-text">"A genuine measure of success is how many times you can bounce back from
+                            failure."</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.linkedin.com/in/priyesh-sharan-b54490180" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn" target="_blank"><img src="img/linkedin.svg"
+                                class="cardfootimg" alt="linkedin"></a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/shuv.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Shuvrajit Bhaduri</h4>
+                        <h6 class="card-subtitle">Corporate Executive</h6>
+                        <p class="card-text">"Luceat Lux Nostra"</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://in.linkedin.com/in/shuvrajit-bhaduri-666875155" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn" target="_blank"><img src="img/linkedin.svg"
+                                class="cardfootimg" alt="linkedin"></a>
+
+                        <a href="https://facebook.com/shuvrajit.bhaduri" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/facebook.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/aditya.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Aditya Shukla</h4>
+                        <h6 class="card-subtitle">Corporate Executive</h6>
+                        <p class="card-text">"In pursuit of the extraordinary"</p>
+                    </div>
+                    <div class="card-footer">
+
+                        <a href="https://www.linkedin.com/in/aditya-shukla-975940188" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/naynika.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Naynika Madan</h4>
+                        <h6 class="card-subtitle">Corporate Executive</h6>
+                        <p class="card-text">"Confuse, don't abuse."</p>
+                    </div>
+                    <div class="card-footer">
+
+                        <a href="https://www.linkedin.com/in/naynikamadan" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/shubhangi.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Shubhangi Soni</h4>
+                        <h6 class="card-subtitle">ML Developer</h6>
+                        <p class="card-text">'Error 404 : Motivational quote not found'</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/ShubhangiSoni1603" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg"
+                                alt="Git"></a>
+
+                        <a href="https://www.linkedin.com/in/shubhangi-soni" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/priyanshy.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Priyanshy Sharma</h4>
+                        <h6 class="card-subtitle">Corporate Executive</h6>
+                        <p class="card-text">"What makes you happy right now?"</p>
+                    </div>
+                    <div class="card-footer">
+
+                        <a href="https://www.linkedin.com/in/priyanshy-sharma-6a2910187" target="_blank"
+                            class="tooltipped" data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg"
+                                class="cardfootimg" alt="linkedin"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/nandita.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Nandita Mishra</h4>
+                        <h6 class="card-subtitle">Corporate Executive</h6>
+                        <p class="card-text">"Simple,kind, hardworking and dedicated."</p>
+                    </div>
+                    <div class="card-footer">
+
+                        <a href="https://github.com/nanditamishra" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg"
+                                alt="Git"></a>
+                        <a href="https://www.linkedin.com/in/nandita-mishra-94a69318b" target="_blank"
+                            class="tooltipped" data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg"
+                                class="cardfootimg" alt="linkedin"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/sinha.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Aryan Manish Sinha</h4>
+                        <h6 class="card-subtitle">Corporate Executive</h6>
+                        <p class="card-text">"On the back of this t-shirt is everything you need to know about me."</p>
+                    </div>
+                    <div class="card-footer">
+
+                        <a href="https://www.linkedin.com/in/aryan-sinha-82595513a" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<!-- spons ends -->
+    <!-- pr ends -->
 
-  <!-- footer -->
-  <footer class="page-footer">
-    <div class="text-center container">
-        <p class="footer-text p-0 mb-0"> Contact Us</p>
-        <a href="mailto:contact@msclubsrm.in" class="tooltipped" data-position="top" data-tooltip="Mail"><img
-            src="img/email.svg" alt="mail"></a>
-    
-    <a href="https://www.facebook.com/mspcsrm/" class="tooltipped" data-position="top"
-        data-tooltip="Facebook"><img src="img/facebook.svg" alt="fb"></a>
-    
-    <a href=" https://www.instagram.com/mspcsrm/" class="tooltipped" data-position="top"
-        data-tooltip="Instagram"><img src="img/instagram.svg" alt="instagram"></a>
-    
-    <a href="https://www.linkedin.com/company/mspc-srm/" class="tooltipped" data-position="top"
-        data-tooltip="LinkedIn"><img src="img/linkedin.svg" alt="linkedin"></a>
-        <br>
-        <br>
-        <p class="footer-text p-0 mb-0">© 2020 Copyright</p>
-        
+    <!-- spons -->
+    <div class="members container sponsimg" id="sponsimg">
+        <div class="row">
 
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/apurva.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Apurva Gaurav</h4>
+                        <h6 class="card-subtitle">Corporate Executive</h6>
+                        <p class="card-text">"Optimistic Nibba🤘"</p>
+                    </div>
+                    <div class="card-footer">
+
+                        <a href="linkedin.com/in/theApurvaGaurav" target="_blank" class="tooltipped" data-position="top"
+                            data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg" alt="linkedin"></a>
+
+                        <a href="github.com/apurva2303" target="_blank" class="tooltipped" data-position="top"
+                            data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg" alt="Git"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/suhana.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Suhana Thakur </h4>
+                        <h6 class="card-subtitle">Corporate Executive</h6>
+                        <p class="card-text">"Sassy Soul."</p>
+                    </div>
+                    <div class="card-footer">
+
+                        <a href="https://www.linkedin.com/in/suhana-thakur-75b23718a" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/dhulika.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Dhulika Mehta </h4>
+                        <h6 class="card-subtitle">Corporate Executive</h6>
+                        <p class="card-text">"Towards Infinity, Slowly and Steadily! Creating Name and Leaving
+                            Impression!"</p>
+                    </div>
+                    <div class="card-footer">
+
+                        <a href="https://www.linkedin.com/in/dhulika-m-a799aa11b/" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/vidushi.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Vidushi Gupta </h4>
+                        <h6 class="card-subtitle">Corporate Executive</h6>
+                        <p class="card-text">"You v/s You"</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/Vidushi-Gupta" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="Instagram"><img src="img/github.svg" class="cardfootimg"
+                                alt="Git"></a>
+                        <a href="https://www.linkedin.com/in/vidushi-gupta-84b9a0188" target="_blank" class="tooltipped"
+                            data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg" class="cardfootimg"
+                                alt="linkedin"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="card bg-light shadow text-center">
+                    <img class="card-img-top cardimg mx-auto" src="img/teamimg/sai.jpg" alt="Card image">
+                    <div class="cardtext">
+                        <h4 class="card-title cardtitle">Pavan Sai Kistamsetty</h4>
+                        <h6 class="card-subtitle">Corporate Executive</h6>
+                        <p class="card-text">"If hardwork is your weapon, success will be your slave.</p>
+                    </div>
+                    <div class="card-footer">
+
+                        <a href="https://www.linkedin.com/in/pavan-sai-kistamsetty-69369618b" target="_blank"
+                            class="tooltipped" data-position="top" data-tooltip="LinkedIn"><img src="img/linkedin.svg"
+                                class="cardfootimg" alt="linkedin"></a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</footer>
-<!-- footer ends -->
+    <!-- spons ends -->
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- footer -->
+    <footer class="page-footer">
+        <div class="text-center container">
+            <p class="footer-text p-0 mb-0"> Contact Us</p>
+            <a href="mailto:contact@msclubsrm.in" class="tooltipped" data-position="top" data-tooltip="Mail"><img
+                    src="img/email.svg" alt="mail"></a>
 
-</body> 
- </head>
- </html>
+            <a href="https://www.facebook.com/mspcsrm/" class="tooltipped" data-position="top"
+                data-tooltip="Facebook"><img src="img/facebook.svg" alt="fb"></a>
+
+            <a href=" https://www.instagram.com/mspcsrm/" class="tooltipped" data-position="top"
+                data-tooltip="Instagram"><img src="img/instagram.svg" alt="instagram"></a>
+
+            <a href="https://www.linkedin.com/company/mspc-srm/" class="tooltipped" data-position="top"
+                data-tooltip="LinkedIn"><img src="img/linkedin.svg" alt="linkedin"></a>
+            <br>
+            <br>
+            <p class="footer-text p-0 mb-0">© 2020 Copyright</p>
+
+
+        </div>
+    </footer>
+    <!-- footer ends -->
+    <script async type="text/javascript" src="js/team.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+</head>
+
+</html>
