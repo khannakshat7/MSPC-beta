@@ -97,11 +97,11 @@ html {
 
 }
 .card_body_text{
-	font-size: 1rem;
+	font-size: 22px;
 	color: #707070;
 	font-weight: 400;
-	word-spacing: 2vh;
-	line-height: 0.5cm;
+	line-height: 25px;
+	text-align: justify;
 }
 
 
