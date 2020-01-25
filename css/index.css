@@ -244,8 +244,9 @@ html {
 }
 
 .page-footer img {
-	height: 50px;
-	width: 50px;
+	height: 35px;
+	width: 35px;
+	margin-top:10px;
 	margin-left: 10px;
 	margin-right: 10px;
 }
