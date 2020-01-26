@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <title>Certificates - Microsoft Student Partners Club</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130200243-3"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-storage.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -53,16 +55,22 @@
             </ul>
         </div>
     </nav>
-
+    <div class="progress" id="progress">
+        <div class="indeterminate"></div>
+    </div>
     <div class="container">
+        
         <h1 class="text-center title_text" style="padding-top: 75px;">Certificates</h1>
         <h5 class="text-center subtitle_text">Blockchain and Decentralized AI</h1>
-            <input type="email" class="form-control regno" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Enter Registered E-mail ID" id="regid">
-            <div class=" d-flex justify-content-center">
-                <button type="button" class="btn btn-primary events_btn" onclick="dod1()">SEARCH</button>
-                <!-- <button type="button" target="_blank" class="btn btn-primary events_btn" id="datalink">DOWNLOAD</button> -->
+            <input type="email" class="form-control regno" aria-describedby="emailHelp"
+            placeholder="Enter Registered E-mail ID" id="regid" name="regno">
+            <a href="#!" id="errorlink">s</a>
+            <div class="d-flex justify-content-center download">
+            <a class="events_btn" target="_blank" href="" id="datalink" download></a>
             </div>
+        <div class=" d-flex justify-content-center">
+            <button type="button" class="btn btn-primary events_btn btn" onclick="dod1()">SEARCH</button>
+        </div>
     </div>
     
 
@@ -85,7 +93,6 @@
         </div>
     </footer>
     <!-- scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
