@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body class="dark-mode" id="body">
 
 	<!-- start navabr -->
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -48,6 +48,8 @@
 	</nav>
 
 	<!-- end navbar -->
+
+	<a class="float" name="dark_light" onclick="toggleDarkLight()" style="padding-top: 15px;" title="Toggle dark/light mode">🌛</a>
 
 	<div class="galleryheading text-center">
 		<span>Event Gallery</span>
@@ -460,6 +462,14 @@
 
 		</div>
 	</footer>
+	<script>
+		function toggleDarkLight() {
+  		var body = document.getElementById("body");
+  		var currentClass = body.className;
+  		body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+	}
+	</script>
+
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>

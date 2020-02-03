@@ -57,7 +57,7 @@ html {
 }
 
 .dark-mode .card-title{
-	color: grey;
+	color: #e6e6e6;
 }
 
 .dark-mode .title_text{
@@ -77,7 +77,7 @@ html {
 }
 
 .dark-mode .title_uptext{
-	color: white;
+	color: #e6e6e6;
 }
 
 .dark-mode .page-footer{
@@ -85,11 +85,27 @@ html {
 }
 
 .dark-mode .footer-text{
-	color: white;
+	color: #e6e6e6;
+}
+
+.dark-mode .card-subtitle{
+	color: #e6e6e6;
 }
 
 .dark-mode .float{
 	background-color: grey;
+}
+
+.dark-mode .page-footer{
+	background-color: #1a1a1a;
+}
+
+.dark-mode .navbar{
+	background-color: #1a1a1a;
+}
+
+.dark-mode .nav-link{
+	color: white !important;
 }
 
 .title_text {
@@ -260,6 +276,8 @@ html {
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
+	cursor: pointer;
+	overflow: hidden;
 }
 
 .my-float{
