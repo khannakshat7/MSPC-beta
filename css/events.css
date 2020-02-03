@@ -53,7 +53,7 @@ html {
 /* EVENT.HTML START*/
 
 .dark-mode{
-	background-color: black;
+	background-color: #262626;
 }
 
 .dark-mode .card-title{
@@ -61,7 +61,7 @@ html {
 }
 
 .dark-mode .title_text{
-	color: #808080;
+	color: #e6e6e6;
 }
 
 .dark-mode .card_body_text{
@@ -69,7 +69,7 @@ html {
 }
 
 .dark-mode .up_card{
-	background-color: grey;
+	background-color: #333333;
 }
 
 .dark-mode .bg-upcard{
