@@ -277,7 +277,8 @@ html {
 	border-radius:50px;
 	text-align:center;
 	cursor: pointer;
-	overflow: hidden;
+	opacity: 1;
+	opacity: inherit;
 }
 
 .my-float{
