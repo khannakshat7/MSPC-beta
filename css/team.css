@@ -74,3 +74,16 @@
 .card{
 	min-height: 350px;
 }
+
+.dark-mode .card{
+	background-color: #333333 !important;
+}
+
+.dark-mode .card-title, .dark-mode .teamheading{
+	color: #e6e6e6;
+}
+
+.dark-mode .cardtext, .dark-mode .card-subtitle{
+	color: white;
+}
+

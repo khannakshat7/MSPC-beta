@@ -250,3 +250,47 @@ html {
 	margin-right: 10px;
 	margin-bottom: 10px;
 }
+
+/* DARK-MODE */
+
+.dark-mode .page-footer{
+	background-color: #1a1a1a;
+}
+
+.dark-mode .navbar{
+	background-color: #1a1a1a;
+}
+
+.dark-mode .nav-link{
+	color: white !important;
+}
+
+/* .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#ffb84d;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.my-float{
+	margin-top:22px;
+}
+
+.dark-mode{
+	background-color: #262626;
+}
+
+.dark-mode .headiv2, .dark-mode .div2text, .dark-mode .div3head{
+	color: #e6e6e6;
+}
+
+.dark-mode .float{
+	background-color: grey;
+} */
