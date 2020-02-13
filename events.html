@@ -31,6 +31,7 @@
 </head>
 
 <body class="events_body dark-mode" id="body">
+	<a class="float" name="dark_light" onclick="toggleDarkLight()" style="padding-top: 15px;" title="Toggle dark/light mode">🌛</a>
 	<!-- start navabr -->
 	<nav class="navbar navbar-expand-lg navbar-light  fixed-top">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -57,7 +58,6 @@
 	</nav>
 	<div class="container">
 
-		<a class="float" name="dark_light" onclick="toggleDarkLight()" style="padding-top: 15px;" title="Toggle dark/light mode">🌛</a>
 		
 		<h1 class="text-center title_text" style="padding-top: 60px;">UPCOMING EVENTS</h1>
 		<div class="card up_card">
@@ -250,13 +250,7 @@
 	</footer>
 
 	<!-- bootstrap -->
-	<script>
-		function toggleDarkLight() {
-  		var body = document.getElementById("body");
-  		var currentClass = body.className;
-  		body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-	}
-	</script>
+	<script src="js\DARKMODE.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>

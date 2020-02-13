@@ -76,7 +76,7 @@
 }
 
 .dark-mode .card{
-	background-color: #333333 !important;
+	background-color: #696969 !important;
 }
 
 .dark-mode .card-title, .dark-mode .teamheading{
@@ -87,3 +87,6 @@
 	color: white;
 }
 
+.dark-mode .events_btn_img{
+	color: white;
+}
