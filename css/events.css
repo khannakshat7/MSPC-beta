@@ -108,6 +108,8 @@ html {
 	color: white !important;
 }
 
+
+
 .title_text {
 	color: #707070;
 	padding-top: 2%;
@@ -128,7 +130,7 @@ html {
 	text-align: justify;
 }
 
-.title-pad {
+.light-mode .title-pad {
 	padding-top: 2%;
 	position: relative;
 	bottom: 10%;
