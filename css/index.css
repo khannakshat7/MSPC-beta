@@ -253,18 +253,51 @@ html {
 
 /* DARK-MODE */
 
-.dark-mode .page-footer{
+.darkmode--activated .footer-text{
+	color: white;
+}
+
+.darkmode--activated .page-footer{
+	background-color: #1a1a1a;
+	/* color: white; */
+	mix-blend-mode: difference;
+}
+
+.darkmode--activated .navbar{
 	background-color: #1a1a1a;
 }
 
-.dark-mode .navbar{
-	background-color: #1a1a1a;
-}
-
-.dark-mode .nav-link{
+.darkmode--activated .nav-link{
 	color: white !important;
 }
 
+.darkmode--activated .card{
+	background-color: #616161;
+}
+
+.darkmode--activated .card-text{
+	color: white;
+}
+
+.darkmode--activated{
+	background-color: grey !important;
+}
+
+.darkmode--activated .card-subtitle{
+	color: white;
+}
+
+.darkmode--activated .card-title{
+	color: white;
+}
+
+.darkmode--activated .headiv2{
+	color: white;
+}
+
+.darkmode--activated .div2text{
+	color: white;
+}
 /* .float{
 	position:fixed;
 	width:60px;
@@ -283,14 +316,14 @@ html {
 	margin-top:22px;
 }
 
-.dark-mode{
+.darkmode--activated{
 	background-color: #262626;
 }
 
-.dark-mode .headiv2, .dark-mode .div2text, .dark-mode .div3head{
+.darkmode--activated .headiv2, .darkmode--activated .div2text, .darkmode--activated .div3head{
 	color: #e6e6e6;
 }
 
-.dark-mode .float{
+.darkmode--activated .float{
 	background-color: grey;
 } */
