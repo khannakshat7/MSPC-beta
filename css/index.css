@@ -238,15 +238,96 @@ html {
 .footer-text{
 	text-align:center;
 	color: #707070;
-	font-weight: 300;
-	font-size: 4vh;
+	font-size: 25x;
 
 }
 
 .page-footer img {
-	height: 35px;
-	width: 35px;
+	height: 30px;
+	width: 30px;
 	margin-top:10px;
 	margin-left: 10px;
 	margin-right: 10px;
+	margin-bottom: 10px;
 }
+
+/* DARK-MODE */
+
+.darkmode--activated .footer-text{
+	color: white;
+}
+
+.darkmode--activated .page-footer{
+	background-color: #1a1a1a;
+	/* color: white; */
+	mix-blend-mode: difference;
+}
+
+.darkmode--activated .navbar{
+	background-color: #1a1a1a;
+}
+
+.darkmode--activated .nav-link{
+	color: white !important;
+}
+
+.darkmode--activated .card{
+	background-color: #616161;
+}
+
+.darkmode--activated .card-text{
+	color: white;
+}
+
+.darkmode--activated{
+	background-color: grey !important;
+}
+
+.darkmode--activated .card-subtitle{
+	color: white;
+}
+
+.darkmode--activated .card-title{
+	color: white;
+}
+
+.darkmode--activated .headiv2{
+	color: white;
+}
+
+.darkmode--activated .div2text{
+	color: white;
+}
+
+.darkmode-toggle{
+	z-index: 1;
+}
+/* .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#ffb84d;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.my-float{
+	margin-top:22px;
+}
+
+.darkmode--activated{
+	background-color: #262626;
+}
+
+.darkmode--activated .headiv2, .darkmode--activated .div2text, .darkmode--activated .div3head{
+	color: #e6e6e6;
+}
+
+.darkmode--activated .float{
+	background-color: grey;
+} */
