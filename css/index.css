@@ -298,6 +298,10 @@ html {
 .darkmode--activated .div2text{
 	color: white;
 }
+.darkmode--activated .centered1,
+.centered2{
+	color: white;
+}
 
 .darkmode-toggle{
 	z-index: 1;
