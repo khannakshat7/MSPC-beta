@@ -52,62 +52,70 @@ html {
 /*  end-navbar  */
 /* EVENT.HTML START*/
 
-.dark-mode{
-	background-color: #262626;
-}
 
-.dark-mode .card-title{
+.darkmode--activated .card-title{
 	color: #e6e6e6;
 }
 
-.dark-mode .title_text{
+.darkmode--activated .title_text{
 	color: #e6e6e6;
+	mix-blend-mode: difference;
 }
 
-.dark-mode .card_body_text{
+.darkmode--activated .card_body_text{
 	color: white;
 }
 
-.dark-mode .up_card{
+.darkmode--activated .up_card{
 	background-color: #333333;
 }
 
-.dark-mode .bg-upcard{
+.darkmode--activated .bg-upcard{
 	background-color: #595959;
 }
 
-.dark-mode .title_uptext{
+.darkmode--activated .title_uptext{
 	color: #e6e6e6;
 }
 
-.dark-mode .page-footer{
+.darkmode--activated .page-footer{
+	background-color: rgb(59, 59, 59);
+	mix-blend-mode: difference;
+}
+
+.darkmode--activated .footer-text{
+	color: #e6e6e6;
+}
+
+.darkmode--activated .card-subtitle{
+	color: #e6e6e6;
+}
+
+.darkmode--activated .float{
 	background-color: grey;
 }
 
-.dark-mode .footer-text{
-	color: #e6e6e6;
-}
-
-.dark-mode .card-subtitle{
-	color: #e6e6e6;
-}
-
-.dark-mode .float{
-	background-color: grey;
-}
-
-.dark-mode .page-footer{
+.darkmode--activated .page-footer{
 	background-color: #1a1a1a;
 }
 
-.dark-mode .navbar{
+.darkmode--activated .navbar{
 	background-color: #1a1a1a;
 }
 
-.dark-mode .nav-link{
+.darkmode--activated .nav-link{
 	color: white !important;
 }
 
+.darkmode--activated p, .darkmode--activated h1, .darkmode--activated h5{
+	color: white;
+}
+
+.darkmode--activated{
+	background: #262626 !important;
+	/* mix-blend-mode: difference; */
+}
+	
 
 
 .title_text {
@@ -291,7 +299,7 @@ html {
 /* $dark-color: #111;
 $light-color: #eee;
 
-body.dark-mode {
+body.darkmode--activated {
   background-color: #111111;
   color: $light-color;
   a {

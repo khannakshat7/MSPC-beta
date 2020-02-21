@@ -52,26 +52,27 @@ font-family: 'Indie Flower', cursive;}
 	margin-top:22px;
 }
 
-.dark-mode{
+/* .darkmode--activated{
 	background-color: #262626;
-}
+} */
 
-.dark-mode .card-body{
+.darkmode--activated .card-body{
 	background-color: #333333;
 }
 
-.dark-mode .galleryheading{
+.darkmode--activated .galleryheading{
 	color:  #e6e6e6;
+	mix-blend-mode: difference;
 }
 
-.dark-mode .p-3{
+.darkmode--activated .p-3{
 	background-color: #333333 !important;
 }
 
-.dark-mode .courses-text{
+.darkmode--activated .courses-text{
 	color: #e6e6e6;
 }
 
-.dark-mode .float{
+.darkmode--activated .float{
 	background-color: grey;
 }

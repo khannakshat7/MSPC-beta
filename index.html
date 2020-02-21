@@ -59,7 +59,6 @@
 </nav>
 <!-- end navbar -->
 
-<!-- <a class="float" name="dark_light" onclick="toggleDarkLight()" style="padding-top: 15px;" title="Toggle dark/light mode">🌛</a> -->
 
 <!-- start first div -->
 <div class="first-div">
@@ -103,8 +102,8 @@
     </div>
     <div class="domains">
         <div class="div3img text-center">
-        <img src="img/Home Page Domain Vectors.svg" class="img-fluid mx-auto d-block" alt="Our Domains">
-    </div>
+            <img src="img/Home Page Domain Vectors.svg" style="mix-blend-mode: difference;" class="img-fluid mx-auto d-block" alt="Our Domains">
+        </div>
     <div class="div3slider text-center">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -159,6 +158,10 @@
 
 <!-- scripts -->
 <script src="js\DARKMODE.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+<script>
+  new Darkmode().showWidget();
+</script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <script>var typed = new Typed('.name', { strings: ["Home of Microsoft Student Partners Club SRM", ""], typeSpeed: 40, backSpeed: 40, loop: true }); </script>
 <!-- bootstrap -->
