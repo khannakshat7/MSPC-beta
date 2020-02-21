@@ -298,7 +298,6 @@ html {
 .darkmode--activated .div2text{
 	color: white;
 }
-
 .darkmode--activated .centered1,
 .centered2 {
 	color: white;
@@ -307,7 +306,6 @@ html {
 .darkmode-toggle{
 	z-index: 1;
 }
-
 /* .float{
 	position:fixed;
 	width:60px;
