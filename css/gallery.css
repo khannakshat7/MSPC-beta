@@ -76,3 +76,6 @@ font-family: 'Indie Flower', cursive;}
 .darkmode--activated .float{
 	background-color: grey;
 }
+.darkmode-toggle::after {
+	content: "🌓";
+}
