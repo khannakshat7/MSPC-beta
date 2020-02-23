@@ -207,21 +207,21 @@ html {
 	.div3img{
 		display: none;
 }
-	
+
 }
 
 @media only screen and (min-width: 500px) {
 	.div3slider{
 		display: none;
-}	
+}
  }
   .div3img{
-	
+
 	margin-left: 13%;
 	margin-right: auto;
 	width: 80%;
 	height: 80%;
-} 
+}
 
 .domains{
 	margin-top: 5vh;
@@ -253,13 +253,13 @@ html {
 
 /* DARK-MODE */
 
-.darkmode--activated .footer-text, 
+.darkmode--activated .footer-text,
 .darkmode--activated .card-text,
 .darkmode--activated .card-subtitle,
 .darkmode--activated .card-title,
-.darkmode--activated .headiv2,	
-.darkmode--activated .div2text,	
-.darkmode--activated .centered1,	
+.darkmode--activated .headiv2,
+.darkmode--activated .div2text,
+.darkmode--activated .centered1,
 .darkmode--activated .name
 {
 	color: white;
@@ -293,6 +293,14 @@ html {
 	mix-blend-mode: difference;
 }
 
+.darkmode--activated .div2text{
+	color: white;
+}
+
+
+.darkmode-toggle{
+	z-index: 1;
+}
 /* .float{
 	position:fixed;
 	width:60px;
