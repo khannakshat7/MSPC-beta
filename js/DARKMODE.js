@@ -37,13 +37,25 @@
                 left: '32px', // default: 'unset'
                 time: '0.3s', // default: '0.3s'
             //     mixColor: '#fff', // default: '#fff'
-            //     backgroundColor: '#262626',  // default: '#fff'
+            //      backgroundColor: '#4D4D4D',  // default: '#fff'
                 buttonColorDark: '#100f2c',  // default: '#100f2c'
                 buttonColorLight: '#fff', // default: '#fff'
                 saveInCookies: true, // default: true,
-                label: "", // default: ''
+                label: '', // default: ''
             //     autoMatchOsTheme: true // default: true
               }
               
               const darkmode = new Darkmode(options);
               darkmode.showWidget();
+            //   darkmode.toggle();  
+            //   console.log(darkmode.isActivated());
+              
+            //   if(darkmode.isActivated() === false){
+            //     document.getElementById("light-mode").style.display="none";
+            //     document.getElementById("dark-mode").style.display="block";
+            //   }
+            //   if(darkmode1.isActivated() === true){
+            //     document.getElementById("light-mode").style.display="block";
+            //     document.getElementById("dark-mode").style.display="none";
+            //   }
+            

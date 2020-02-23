@@ -207,21 +207,21 @@ html {
 	.div3img{
 		display: none;
 }
-	
+
 }
 
 @media only screen and (min-width: 500px) {
 	.div3slider{
 		display: none;
-}	
+}
  }
   .div3img{
-	
+
 	margin-left: 13%;
 	margin-right: auto;
 	width: 80%;
 	height: 80%;
-} 
+}
 
 .domains{
 	margin-top: 5vh;
@@ -253,18 +253,26 @@ html {
 
 /* DARK-MODE */
 
-.darkmode--activated .footer-text{
+.darkmode--activated .footer-text,
+.darkmode--activated .card-text,
+.darkmode--activated .card-subtitle,
+.darkmode--activated .card-title,
+.darkmode--activated .headiv2,
+.darkmode--activated .div2text,
+.darkmode--activated .centered1,
+.darkmode--activated .name
+{
 	color: white;
 }
 
 .darkmode--activated .page-footer{
-	background-color: #1a1a1a;
+	background-color: #333333;
 	/* color: white; */
 	mix-blend-mode: difference;
 }
 
 .darkmode--activated .navbar{
-	background-color: #1a1a1a;
+	background-color: #333333;
 }
 
 .darkmode--activated .nav-link{
@@ -275,24 +283,14 @@ html {
 	background-color: #616161;
 }
 
-.darkmode--activated .card-text{
-	color: white;
-}
 
 .darkmode--activated{
 	background-color: grey !important;
 }
 
-.darkmode--activated .card-subtitle{
+.darkmode--activated .div3head{
 	color: white;
-}
-
-.darkmode--activated .card-title{
-	color: white;
-}
-
-.darkmode--activated .headiv2{
-	color: white;
+	mix-blend-mode: difference;
 }
 
 .darkmode--activated .div2text{
@@ -332,3 +330,10 @@ html {
 .darkmode--activated .float{
 	background-color: grey;
 } */
+.darkmode-layer{
+	background: #4d4d4d !important;
+	mix-blend-mode: normal !important;
+}
+.darkmode-toggle::after {
+	content: "🌓";
+}

@@ -58,7 +58,7 @@ html {
 }
 
 .darkmode--activated .title_text{
-	color: #e6e6e6;
+	color: white;
 	mix-blend-mode: difference;
 }
 
@@ -71,7 +71,7 @@ html {
 }
 
 .darkmode--activated .bg-upcard{
-	background-color: #595959;
+	background-color: #404040;
 }
 
 .darkmode--activated .title_uptext{
@@ -96,11 +96,11 @@ html {
 }
 
 .darkmode--activated .page-footer{
-	background-color: #1a1a1a;
+	background-color: #333333;
 }
 
 .darkmode--activated .navbar{
-	background-color: #1a1a1a;
+	background-color: #333333;
 }
 
 .darkmode--activated .nav-link{
@@ -116,7 +116,10 @@ html {
 	/* mix-blend-mode: difference; */
 }
 	
-
+.darkmode-layer{
+	background: #4d4d4d !important;
+	mix-blend-mode: normal !important;
+}
 
 .title_text {
 	color: #707070;
@@ -322,3 +325,7 @@ body.light-mode {
     color: $light-color;
   }
 } */
+
+.darkmode-toggle::after {
+	content: "🌓";
+}
