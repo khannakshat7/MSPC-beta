@@ -79,7 +79,11 @@
 	background-color: #808080 !important;
 }
 
-.darkmode--activated .card-title, .darkmode--activated .teamheading{
+.darkmode--activated .card-title{
+	color: white;
+	/* mix-blend-mode: difference ; */
+}
+.darkmode--activated .teamheading{
 	color: white;
 	mix-blend-mode: difference;
 }
@@ -92,8 +96,22 @@
 	color: black;
 }
 .darkmode--activated .events_btn_img:focus-within{
-	color: white;
+	color: white !important;
 }
 .darkmode-toggle::after {
 	content: "🌓";
 }
+
+.off{
+	display: none;
+}
+.on{
+	display: block;
+}
+/* .lighton{
+	display: block;
+}
+.darkoff{
+	display: none;
+}
+ */

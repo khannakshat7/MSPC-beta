@@ -337,3 +337,9 @@ html {
 .darkmode-toggle::after {
 	content: "🌓";
 }
+.off{
+	display: none;
+}
+.on{
+	display: block;
+}

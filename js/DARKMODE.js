@@ -45,7 +45,7 @@
             //     autoMatchOsTheme: true // default: true
               }
               
-              const darkmode = new Darkmode(options);
+              var darkmode = new Darkmode(options);
               darkmode.showWidget();
             //   darkmode.toggle();  
             //   console.log(darkmode.isActivated());
