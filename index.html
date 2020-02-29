@@ -61,10 +61,10 @@
 
 <div class="first-div">
   <div class="centered-logo">
-    <img src="img\logo-blue.svg" class="lm" id="light-mode" alt="our logo">
-    <img src="img\dark_svg\Logo.svg" class="dm" id="dark-mode" alt="our logo">
-    <img src="img/logo-blue.svg" class="lm" alt="our logo">
-    <img src="img\dark_svg\Logo.svg" class="dm" alt="our logo">
+    <!-- <img src="img\logo-blue.svg" class="lm" id="light-mode" alt="our logo">
+    <img src="img\dark_svg\Logo.svg" class="dm" id="dark-mode" alt="our logo"> -->
+    <img src="img\logo-blue.svg" class="lm1" alt="our logo">
+    <!-- <img src="img\dark_svg\Logo.svg" class="dm1" alt="our logo"> -->
   </div>
   <div class="centered1">
     <span>Welcome</span>
@@ -82,9 +82,9 @@
     <div class="row ">
         <div class="col-md-5 col-sm-12 ">
             <div class="leftside container">
-                <img class="img-fluid minpic lm" src="img/about_us.svg"  id="light-mode" alt="About Us">
-                <img class="img-fluid dm" src="img\dark_svg\About Us.svg" id="dark-mode" style="display: none;"alt="About Us">
+                <!-- <img class="img-fluid dm" src="img\dark_svg\About Us.svg" id="dark-mode" style="display: none;"alt="About Us"> -->
                 <img class="img-fluid minpic lm" src="img/about_us.svg" id="test" alt="About Us">
+                <!-- <img class="img-fluid minpic dm" src="img\dark_svg\About Us.svg" id="test" alt="About Us"> -->
                 <!-- <img class="img-fluid dm" src="img\dark_svg\About Us.svg" id="dark-mode" alt="About Us"> -->
             </div>
 
@@ -165,35 +165,35 @@
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
 <script>
 
-  new Darkmode().showWidget();  Darkmode.toggle();
-  const yo = new Darkmode().isActivated();
-  console.log(yo);
+  new Darkmode().showWidget(); 
+  //  Darkmode.toggle();
+  // const yo = new Darkmode().isActivated();
+  // console.log(yo);
 
-  /* if(yo === true){
-    // document.getElementsByClassName("lm").style.display="none";
-    // document.getElementsByClassName("dm").style.display="block";
-    // document.documentElement.style.setProperty('', 'pink');
-    document.getElementsByClassName("lm").src="img\dark_svg\Logo.svg";
-    // document.getElementsByClassName("dm").src="img\dark_svg\About Us.svg";
-  }
-  else if(yo === false){
-    document.getElementsByClassName("lm").src="img/about_us.svg";
-    // document.getElementsByClassName("dm").classList.remove('off');
-  } */
-  $(".darkmode-toggle").click(function(){
-    $("#imgtgl").find('img').toggle();
-  });
+  // $(".darkmode-toggle").click(function(){
+  //   $("#imgtgl").find('img').toggle();
+  // });
 
 
   // darkmode.toggle();
-  const yo = new Darkmode().isActivated();
+  // const yo = new Darkmode().isActivated();
 
   </script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script>
 $(".darkmode-toggle").click(function () {
+  var yo;
+  var lm = document.getElementsByClassName("lm");
+  var dm = document.getElementsByClassName("dm");
+  yo = new Darkmode().isActivated();
+  console.log(yo);
+  if(yo === true){
   document.getElementById("test").src = "img/dark_svg/About Us.svg";
-console.log("haha");
+  }
+  else if(yo === false){
+    document.getElementById("test").src = "img/about_us.svg";
+  } 
+// console.log("haha");
 });
 
 </script>
