@@ -1,4 +1,6 @@
-	// function toggleDarkLight() {
+import Darkmode from 'darkmode-js';
+
+// function toggleDarkLight() {
 
         //         singlepage
 

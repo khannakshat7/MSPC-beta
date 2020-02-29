@@ -61,7 +61,7 @@
 
 <div class="first-div">
   <div class="centered-logo">
-    <img src="img/logo-blue.svg" class="lm" id="light-mode" alt="our logo">
+    <img src="img\logo-blue.svg" class="lm" id="light-mode" alt="our logo">
     <img src="img\dark_svg\Logo.svg" class="dm" id="dark-mode" alt="our logo">
   </div>
   <div class="centered1">
@@ -81,7 +81,7 @@
         <div class="col-md-5 col-sm-12 ">
             <div class="leftside container">
                 <img class="img-fluid minpic lm" src="img/about_us.svg"  id="light-mode" alt="About Us">
-                <img class="img-fluid dm" src="img\dark_svg\About Us.svg" id="dark-mode" alt="About Us">
+                <img class="img-fluid dm" src="img\dark_svg\About Us.svg" id="dark-mode" style="display: none;"alt="About Us">
             </div>
 
         </div>
@@ -103,7 +103,7 @@
     <div class="domains">
         <div class="div3img text-center">
             <img src="img/Home Page Domain Vectors.svg" id="light-mode"  class="img-fluid mx-auto d-block lm" alt="Our Domains">
-            <img src="img\dark_svg\Domains.svg" id="dark-mode"  class="img-fluid mx-auto d-block dm" alt="Our Domains">
+            <!-- <img src="img\dark_svg\Domains.svg" id="dark-mode"  class="img-fluid mx-auto d-block dm" alt="Our Domains"> -->
          </div>
     <div class="div3slider text-center">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -158,25 +158,30 @@
 
 
 <!-- scripts -->
-<script src="js\DARKMODE.js"></script>
+<!-- <script src="js\DARKMODE.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
 <script>
   new Darkmode().showWidget();
-  darkmode.toggle();
+  Darkmode.toggle();
   const yo = new Darkmode().isActivated();
   console.log(yo);
 
-  if(yo === true){
+  /* if(yo === true){
     // document.getElementsByClassName("lm").style.display="none";
     // document.getElementsByClassName("dm").style.display="block";
     // document.documentElement.style.setProperty('', 'pink');
-    document.getElementsByClassName("lm").classList.add('off');
-    document.getElementsByClassName("dm").classList.remove('on');
+    document.getElementsByClassName("lm").src="img\dark_svg\Logo.svg";
+    // document.getElementsByClassName("dm").src="img\dark_svg\About Us.svg";
   }
   else if(yo === false){
-    document.getElementsByClassName("lm").classList.add('on');
-    document.getElementsByClassName("dm").classList.remove('off');
-  }
+    document.getElementsByClassName("lm").src="img/about_us.svg";
+    // document.getElementsByClassName("dm").classList.remove('off');
+  } */
+  $(".darkmode-toggle").click(function(){
+    $("#imgtgl").find('img').toggle();
+  });
+
+  
   </script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <script>var typed = new Typed('.name', { strings: ["Home of Microsoft Student Partners Club SRM", ""], typeSpeed: 40, backSpeed: 40, loop: true }); </script>
