@@ -63,6 +63,8 @@
   <div class="centered-logo">
     <img src="img\logo-blue.svg" class="lm" id="light-mode" alt="our logo">
     <img src="img\dark_svg\Logo.svg" class="dm" id="dark-mode" alt="our logo">
+    <img src="img/logo-blue.svg" class="lm" alt="our logo">
+    <img src="img\dark_svg\Logo.svg" class="dm" alt="our logo">
   </div>
   <div class="centered1">
     <span>Welcome</span>
@@ -82,6 +84,8 @@
             <div class="leftside container">
                 <img class="img-fluid minpic lm" src="img/about_us.svg"  id="light-mode" alt="About Us">
                 <img class="img-fluid dm" src="img\dark_svg\About Us.svg" id="dark-mode" style="display: none;"alt="About Us">
+                <img class="img-fluid minpic lm" src="img/about_us.svg" id="test" alt="About Us">
+                <!-- <img class="img-fluid dm" src="img\dark_svg\About Us.svg" id="dark-mode" alt="About Us"> -->
             </div>
 
         </div>
@@ -156,13 +160,12 @@
     </div>
 </footer>
 
-
 <!-- scripts -->
 <!-- <script src="js\DARKMODE.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
 <script>
-  new Darkmode().showWidget();
-  Darkmode.toggle();
+
+  new Darkmode().showWidget();  Darkmode.toggle();
   const yo = new Darkmode().isActivated();
   console.log(yo);
 
@@ -181,8 +184,21 @@
     $("#imgtgl").find('img').toggle();
   });
 
-  
+
+  // darkmode.toggle();
+  const yo = new Darkmode().isActivated();
+
   </script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+$(".darkmode-toggle").click(function () {
+  document.getElementById("test").src = "img/dark_svg/About Us.svg";
+console.log("haha");
+});
+
+</script>
+
+
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <script>var typed = new Typed('.name', { strings: ["Home of Microsoft Student Partners Club SRM", ""], typeSpeed: 40, backSpeed: 40, loop: true }); </script>
 <!-- bootstrap -->
