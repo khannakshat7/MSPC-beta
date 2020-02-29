@@ -61,8 +61,8 @@
 
 <div class="first-div">
   <div class="centered-logo">
-    <img src="img/logo-blue.svg" id="light-mode" alt="our logo">
-    <img src="img\dark_svg\Logo.svg" id="dark-mode" alt="our logo">
+    <img src="img/logo-blue.svg" class="lm" id="light-mode" alt="our logo">
+    <img src="img\dark_svg\Logo.svg" class="dm" id="dark-mode" alt="our logo">
   </div>
   <div class="centered1">
     <span>Welcome</span>
@@ -80,8 +80,8 @@
     <div class="row ">
         <div class="col-md-5 col-sm-12 ">
             <div class="leftside container">
-                <img class="img-fluid minpic" src="img/about_us.svg" id="light-mode" alt="About Us">
-                <img class="img-fluid minpic" src="img\dark_svg\About Us.svg" id="dark-mode" alt="About Us">
+                <img class="img-fluid minpic lm" src="img/about_us.svg"  id="light-mode" alt="About Us">
+                <img class="img-fluid dm" src="img\dark_svg\About Us.svg" id="dark-mode" alt="About Us">
             </div>
 
         </div>
@@ -102,10 +102,9 @@
     </div>
     <div class="domains">
         <div class="div3img text-center">
-            <img src="img/Home Page Domain Vectors.svg" id="light-mode" class="img-fluid mx-auto d-block" alt="Our Domains">
-            <img src="img\dark_svg\Domains.svg" id="dark-mode" class="img-fluid mx-auto d-block" alt="Our Domains">
-            <img src="img/Home Page Domain Vectors.svg" style="isolation: isolate;" class="img-fluid mx-auto d-block" alt="Our Domains">
-        </div>
+            <img src="img/Home Page Domain Vectors.svg" id="light-mode"  class="img-fluid mx-auto d-block lm" alt="Our Domains">
+            <img src="img\dark_svg\Domains.svg" id="dark-mode"  class="img-fluid mx-auto d-block dm" alt="Our Domains">
+         </div>
     <div class="div3slider text-center">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -163,16 +162,20 @@
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
 <script>
   new Darkmode().showWidget();
+  darkmode.toggle();
   const yo = new Darkmode().isActivated();
   console.log(yo);
 
   if(yo === true){
-    document.getElementById("light-mode").style.display="none";
-    document.getElementById("dark-mode").style.display="block";
+    // document.getElementsByClassName("lm").style.display="none";
+    // document.getElementsByClassName("dm").style.display="block";
+    // document.documentElement.style.setProperty('', 'pink');
+    document.getElementsByClassName("lm").classList.add('off');
+    document.getElementsByClassName("dm").classList.remove('on');
   }
   else if(yo === false){
-    document.getElementById("light-mode").style.display="block";
-    document.getElementById("dark-mode").style.display="none";
+    document.getElementsByClassName("lm").classList.add('on');
+    document.getElementsByClassName("dm").classList.remove('off');
   }
   </script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
