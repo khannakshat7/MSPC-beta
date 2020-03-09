@@ -75,18 +75,43 @@
 	min-height: 350px;
 }
 
-.dark-mode .card{
-	background-color: #696969 !important;
+.darkmode--activated .card{
+	background-color: #808080 !important;
 }
 
-.dark-mode .card-title, .dark-mode .teamheading{
-	color: #e6e6e6;
+.darkmode--activated .card-title{
+	color: white;
+	/* mix-blend-mode: difference ; */
+}
+.darkmode--activated .teamheading{
+	color: white;
+	mix-blend-mode: difference;
 }
 
-.dark-mode .cardtext, .dark-mode .card-subtitle{
+.darkmode--activated .cardtext, .darkmode--activated .card-subtitle{
 	color: white;
 }
 
-.dark-mode .events_btn_img{
-	color: white;
+.darkmode--activated .events_btn_img{
+	color: black;
 }
+.darkmode--activated .events_btn_img:focus-within{
+	color: white !important;
+}
+.darkmode-toggle::after {
+	content: "🌓";
+}
+
+.off{
+	display: none;
+}
+.on{
+	display: block;
+}
+/* .lighton{
+	display: block;
+}
+.darkoff{
+	display: none;
+}
+ */

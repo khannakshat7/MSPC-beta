@@ -12,39 +12,41 @@ html {
 .navbar-light .navbar-nav .nav-link {
 	color: #707070;
 	font-weight: 700;
-	 position: relative;
+	position: relative;
 }
 .navbar-light .navbar-nav .nav-link.active:after {
 	content: "";
-  	background: #02A4EF;
-  	position: absolute;
-  	bottom: 0;
-  	left: 38%;
-  	top:42px;
-  	height: 18%;
-  	width: 25%;
+	background: #02a4ef;
+	position: absolute;
+	bottom: 0;
+	left: 38%;
+	top: 42px;
+	height: 18%;
+	width: 25%;
 }
 .navbar-light .navbar-nav .nav-link.active {
 	color: black;
-/*	border-bottom: 5px solid #02A4EF;
-*/	font-weight: 500;
+	/*	border-bottom: 5px solid #02A4EF;
+*/
+	font-weight: 500;
 }
 .fixed-top {
-	background-color: #EDEDED;
+	background-color: #ededed;
 }
 /*  end-navbar  */
 .first-div {
 	margin: 0;
 	width: 100%;
 	height: 100vh;
-	background-image: url('Page 1 circle.svg'), url('Page 1 mini circle.svg'), url('Page 1 Left Bottom.svg'), url('Page 1 Right Top.svg'), url('Page 1 Right Bottom.svg');
-	background-size: 80% 80%, 40% 40%, 40% 40%, 40% 40%, 40% 40% ;
-    background-position: center, left top, left bottom, right top, right bottom;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+	background-image: url('Page 1 circle.svg'), url('Page 1 mini circle.svg'), url('Page 1 Left Bottom.svg'),
+		url('Page 1 Right Top.svg'), url('Page 1 Right Bottom.svg');
+	background-size: 80% 80%, 40% 40%, 40% 40%, 40% 40%, 40% 40%;
+	background-position: center, left top, left bottom, right top, right bottom;
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
 }
 .centered1,
 .centered2,
-.centered-logo img{
+.centered-logo img {
 	position: absolute;
 	top: 60%;
 	left: 50%;
@@ -55,10 +57,10 @@ html {
 	color: #707070;
 	font-weight: 700;
 }
-.centered-logo img{
-	top:35%;
+.centered-logo img {
+	top: 35%;
 	height: 40vh;
-	width:40vh;
+	width: 40vh;
 }
 .centered2 {
 	top: 70%;
@@ -154,98 +156,94 @@ html {
 }
 /* end  Scroll */
 
-.leftside, .rightside{
+.leftside,
+.rightside {
 	height: 80vh;
 	width: 100%;
 }
 .leftside img {
-	height:70vh;
+	height: 70vh;
 	width: 100%;
 }
 
-
-.rightside{
+.rightside {
 	background-image: url('Page 2 circle.svg');
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-size: contain;
 }
 
-.headiv2{
+.headiv2 {
 	font-size: 10vh;
 	color: #707070;
 	font-weight: 700;
-
 }
-.div2text{
-   font-size: 3vh;
-   color: #707070;
-   font-weight: 100;
-   text-align: justify;
+.div2text {
+	font-size: 3vh;
+	color: #707070;
+	font-weight: 100;
+	text-align: justify;
 }
 
-#div2{
+#div2 {
 	padding: 20px;
 }
-.div3head{
+.div3head {
 	font-size: 10vh;
 	color: #707070;
 	font-weight: 700;
 	text-align: center;
- }
- .third-div{
-	 margin-top:10vh;
-	 height: 100vh;
- }
- @media only screen and (max-width: 600px) {
+}
+.third-div {
+	margin-top: 10vh;
+	height: 100vh;
+}
+@media only screen and (max-width: 600px) {
 	.third-div {
 		margin-top: 33vh;
 	}
 }
 
 @media only screen and (max-width: 500px) {
-	.div3img{
+	.div3img {
 		display: none;
-}
-	
+	}
 }
 
 @media only screen and (min-width: 500px) {
-	.div3slider{
+	.div3slider {
 		display: none;
-}	
- }
-  .div3img{
-	
+	}
+}
+.div3img {
 	margin-left: 13%;
 	margin-right: auto;
 	width: 80%;
 	height: 80%;
-} 
+}
 
-.domains{
+.domains {
 	margin-top: 5vh;
 	background-image: url('Page 3 Triangle.svg'), url('Page 3 circle.svg');
-	background-size: contain ;
-    background-position: right center, left center;
-    background-repeat: no-repeat, no-repeat;
+	background-size: contain;
+	background-position: right center, left center;
+	background-repeat: no-repeat, no-repeat;
 }
-.page-footer{
-	background-color:#EDEDED ;
+.page-footer {
+	background-color: #ededed;
 	max-width: 100%;
-	margin-top:15vh;
+	margin-top: 15vh;
 }
-.footer-text{
-	text-align:center;
+.footer-text {
+	text-align: center;
 	color: #707070;
 	font-size: 25x;
-
 }
 
 .page-footer img {
 	height: 30px;
 	width: 30px;
-	margin-top:10px;
+	margin-top: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-bottom: 10px;
@@ -253,54 +251,49 @@ html {
 
 /* DARK-MODE */
 
-.darkmode--activated .footer-text{
+.darkmode--activated .footer-text,
+.darkmode--activated .card-text,
+.darkmode--activated .card-subtitle,
+.darkmode--activated .card-title,
+.darkmode--activated .headiv2,
+.darkmode--activated .div2text,
+.darkmode--activated .centered1,
+.darkmode--activated .name {
 	color: white;
 }
 
-.darkmode--activated .page-footer{
-	background-color: #1a1a1a;
+.darkmode--activated .page-footer {
+	background-color: #333333;
 	/* color: white; */
 	mix-blend-mode: difference;
 }
 
-.darkmode--activated .navbar{
-	background-color: #1a1a1a;
+.darkmode--activated .navbar {
+	background-color: #333333;
 }
 
-.darkmode--activated .nav-link{
+.darkmode--activated .nav-link {
 	color: white !important;
 }
 
-.darkmode--activated .card{
+.darkmode--activated .card {
 	background-color: #616161;
 }
 
-.darkmode--activated .card-text{
-	color: white;
-}
-
-.darkmode--activated{
+.darkmode--activated {
 	background-color: grey !important;
 }
 
-.darkmode--activated .card-subtitle{
+.darkmode--activated .div3head {
+	color: white;
+	mix-blend-mode: difference;
+}
+
+.darkmode--activated .div2text {
 	color: white;
 }
 
-.darkmode--activated .card-title{
-	color: white;
-}
-
-.darkmode--activated .headiv2{
-	color: white;
-}
-
-.darkmode--activated .div2text{
-	color: white;
-}
-
-
-.darkmode-toggle{
+.darkmode-toggle {
 	z-index: 1;
 }
 /* .float{
@@ -332,3 +325,16 @@ html {
 .darkmode--activated .float{
 	background-color: grey;
 } */
+.darkmode-layer {
+	background: #4d4d4d !important;
+	mix-blend-mode: normal !important;
+}
+.darkmode-toggle::after {
+	content: "🌓";
+}
+.off {
+	display: none;
+}
+.on {
+	display: block;
+}
