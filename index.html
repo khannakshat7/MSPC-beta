@@ -29,10 +29,9 @@
    <!-- bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
    <link rel="stylesheet" type="text/css" href="css/index.css" />
-
   </script>
  </head>
-<body class="dark">
+<body id="body">
 
 <!-- start navabr -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -161,25 +160,21 @@
 </footer>
 
 <!-- scripts -->
-<!-- <script src="js\DARKMODE.js"></script> -->
+<script src="js\DARKMODE.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
 <script>
 
-  new Darkmode().showWidget(); 
-  //  Darkmode.toggle();
-  // const yo = new Darkmode().isActivated();
-  // console.log(yo);
-
-  // $(".darkmode-toggle").click(function(){
-  //   $("#imgtgl").find('img').toggle();
-  // });
-
-
-  // darkmode.toggle();
-  // const yo = new Darkmode().isActivated();
+  new Darkmode().showWidget();
 
   </script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- check if dark mode is already activated -->
+<script>
+  if ($('.darkmode--activated').length > 0) {
+    document.getElementById("test").src = "img/dark_svg/About Us.svg";
+}
+</script>
+<!-- change about us img on toggle -->
 <script>
 $(".darkmode-toggle").click(function () {
   var yo;
@@ -193,7 +188,6 @@ $(".darkmode-toggle").click(function () {
   else if(yo === false){
     document.getElementById("test").src = "img/about_us.svg";
   } 
-// console.log("haha");
 });
 
 </script>

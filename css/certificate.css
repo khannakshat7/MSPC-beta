@@ -139,31 +139,30 @@ html {
 	content: "🌓";
 }
 
-.darkmode--activated .page-footer{
+.darkmode--activated .page-footer {
 	background-color: rgb(59, 59, 59);
 	mix-blend-mode: difference;
 }
 
-.darkmode--activated .footer-text{
+.darkmode--activated .footer-text {
 	color: #e6e6e6;
 }
-.darkmode--activated .page-footer{
+.darkmode--activated .page-footer {
 	background-color: #333333;
 }
 
-.darkmode--activated .navbar{
+.darkmode--activated .navbar {
 	background-color: #333333;
 }
 
-.darkmode--activated .nav-link{
+.darkmode--activated .nav-link {
 	color: white !important;
 }
 .darkmode--activated .title_text {
 	color: white;
-	mix-blend-mode:difference ;
+	mix-blend-mode: lighten;
 }
-.darkmode--activated .subtitle_text{
+.darkmode--activated .subtitle_text {
 	color: white;
-	mix-blend-mode:difference ;
+	mix-blend-mode: lighten;
 }
-

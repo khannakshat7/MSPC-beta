@@ -1,79 +1,79 @@
-.galleryheading{
+.galleryheading {
 	font-size: 10vh;
 	color: #707070;
 	font-weight: 700;
-	margin-top: 75px
+	margin-top: 75px;
 }
 
-img{
+img {
 	width: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 
-.courses{
+.courses {
 	margin-top: 50px;
 }
 
-.course-img{
+.course-img {
 	padding: 20px;
 }
 
-.courses-text{
-color: #707070;
-font-size: 3vh;
-font-weight: 700;
-font-family: 'Indie Flower', cursive;}
+.courses-text {
+	color: #707070;
+	font-size: 3vh;
+	font-weight: 700;
+	font-family: 'Indie Flower', cursive;
+}
 
-.carousel-item{
+.carousel-item {
 	max-height: 300px !important;
 	min-height: 200px !important;
-
 }
 
 /* DARK-MODE */
 
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#ffb84d;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
+.float {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	background-color: #ffb84d;
+	color: #fff;
+	border-radius: 50px;
+	text-align: center;
 	cursor: pointer;
 	overflow: hidden;
 }
 
-.my-float{
-	margin-top:22px;
+.my-float {
+	margin-top: 22px;
 }
 
 /* .darkmode--activated{
 	background-color: #262626;
 } */
 
-.darkmode--activated .card-body{
+.darkmode--activated .card-body {
 	background-color: #333333;
 }
 
-.darkmode--activated .galleryheading{
-	color:  #e6e6e6;
-	mix-blend-mode: difference;
+.darkmode--activated .galleryheading {
+	color: #e6e6e6;
+	mix-blend-mode: lighten;
 }
 
-.darkmode--activated .p-3{
+.darkmode--activated .p-3 {
 	background-color: #333333 !important;
 }
 
-.darkmode--activated .courses-text{
+.darkmode--activated .courses-text {
 	color: #e6e6e6;
 }
 
-.darkmode--activated .float{
+.darkmode--activated .float {
 	background-color: grey;
 }
 .darkmode-toggle::after {

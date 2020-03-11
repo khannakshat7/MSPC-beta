@@ -1,10 +1,10 @@
-.teamheading{
+.teamheading {
 	font-size: 10vh;
 	color: #707070;
 	font-weight: 700;
-	margin-top: 75px
+	margin-top: 75px;
 }
-.events_btn_img{
+.events_btn_img {
 	background-color: #bfbfbf;
 	margin: 10px;
 	color: white;
@@ -16,41 +16,41 @@
 	box-shadow: rgba(0, 191, 255, 0) 0 7px 5px;
 	width: 200px;
 }
-.events_btn_img:hover{
+.events_btn_img:hover {
 	background-color: #00bfff;
 }
-.techimg{
+.techimg {
 	display: none;
 }
-.creativesimg{
+.creativesimg {
 	display: none;
 }
-.primg{
+.primg {
 	display: none;
 }
-.sponsimg{
+.sponsimg {
 	display: none;
 }
-.sections{
-    margin-top: 3%;
+.sections {
+	margin-top: 3%;
 }
-.cardtitle{
+.cardtitle {
 	color: #707070;
 	font-weight: 700;
 }
-.members{
-    margin-top: 3%;
+.members {
+	margin-top: 3%;
 }
 
-.card{
-   margin-top: 20px;
-   margin-bottom: 20px;
+.card {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
-.corebtn{
-	background-color:#02A4EF;
+.corebtn {
+	background-color: #02a4ef;
 }
-.cardimg{
+.cardimg {
 	border-radius: 50%;
 	height: 200px;
 	width: 200px;
@@ -58,60 +58,50 @@
 	margin-top: 10px;
 }
 
-.cardtext{
+.cardtext {
 	margin-bottom: 10px;
 	padding: 10px;
 	min-height: 170px;
 }
 
-.cardfootimg{
-	height:30px;
-	width:30px;
+.cardfootimg {
+	height: 30px;
+	width: 30px;
 	margin-left: 2%;
 	margin-right: 2%;
 }
 
-.card{
+.card {
 	min-height: 350px;
 }
 
-.darkmode--activated .card{
+.darkmode--activated .card {
 	background-color: #808080 !important;
 }
 
-.darkmode--activated .card-title{
+.darkmode--activated .card-title {
 	color: white;
 	/* mix-blend-mode: difference ; */
 }
-.darkmode--activated .teamheading{
+.darkmode--activated .teamheading {
 	color: white;
-	mix-blend-mode: difference;
+	mix-blend-mode: lighten;
 }
 
-.darkmode--activated .cardtext, .darkmode--activated .card-subtitle{
+.darkmode--activated .cardtext,
+.darkmode--activated .card-subtitle {
 	color: white;
 }
 
-.darkmode--activated .events_btn_img{
+.darkmode--activated .events_btn_img {
 	color: black;
 }
-.darkmode--activated .events_btn_img:focus-within{
+.darkmode--activated .events_btn_img:focus-within {
 	color: white !important;
 }
 .darkmode-toggle::after {
 	content: "🌓";
 }
-
-.off{
-	display: none;
-}
-.on{
+.on {
 	display: block;
 }
-/* .lighton{
-	display: block;
-}
-.darkoff{
-	display: none;
-}
- */
