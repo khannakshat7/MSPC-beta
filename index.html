@@ -175,6 +175,15 @@
   </script>
   
 <script>
+  if($("#body").hasClass("darkmode--activated")){
+    $("#test").attr("src","./img/dark_svg/About Us.svg");
+    $("#test2").attr("src","./img/dark_svg/Domains.svg");
+  }
+  else{
+    $("#test").attr("src","./img/about_us.svg");
+    $("#test2").attr("src","./img/Home Page Domain Vectors.svg");
+  }
+  
 $( ".darkmode-toggle" ).wrap( "<div class='changesvg'></div>" );
 $(".changesvg").click(function(){
   if($("#body").hasClass("darkmode--activated")){
