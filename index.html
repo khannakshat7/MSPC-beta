@@ -21,7 +21,7 @@
 		</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description"
+	<meta name="description" 
 		content="The Official Website for Microsoft Student Partners Club, SRMIST. We are a technical campus club, established in 2014 under the department of CSE at SRM Chennai.">
   <link rel="icon" href="img/logo-blue.svg" type="image type"/>
    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
@@ -105,7 +105,7 @@
     </div>
     <div class="domains">
         <div class="div3img text-center">
-            <img src="img/Home Page Domain Vectors.svg" id="light-mode"  class="img-fluid mx-auto d-block lm" alt="Our Domains">
+            <img src="img/Home Page Domain Vectors.svg" id="test2"  class="img-fluid mx-auto d-block lm" alt="Our Domains">
             <!-- <img src="img\dark_svg\Domains.svg" id="dark-mode"  class="img-fluid mx-auto d-block dm" alt="Our Domains"> -->
          </div>
     <div class="div3slider text-center">
@@ -160,45 +160,37 @@
 </footer>
 
 <!-- scripts -->
-<script src="js\DARKMODE.js"></script>
+<!-- bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- end bootstrap -->
+
+
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
 <script>
 
   new Darkmode().showWidget();
 
   </script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<!-- check if dark mode is already activated -->
+  
 <script>
-  if ($('.darkmode--activated').length > 0) {
-    document.getElementById("test").src = "img/dark_svg/About Us.svg";
-}
-</script>
-<!-- change about us img on toggle -->
-<script>
-$(".darkmode-toggle").click(function () {
-  var yo;
-  var lm = document.getElementsByClassName("lm");
-  var dm = document.getElementsByClassName("dm");
-  yo = new Darkmode().isActivated();
-  console.log(yo);
-  if(yo === true){
-  document.getElementById("test").src = "img/dark_svg/About Us.svg";
+$( ".darkmode-toggle" ).wrap( "<div class='changesvg'></div>" );
+$(".changesvg").click(function(){
+  if($("#body").hasClass("darkmode--activated")){
+    $("#test").attr("src","./img/dark_svg/About Us.svg");
+    $("#test2").attr("src","./img/dark_svg/Domains.svg");
   }
-  else if(yo === false){
-    document.getElementById("test").src = "img/about_us.svg";
-  } 
+  else{
+    $("#test").attr("src","./img/about_us.svg");
+    $("#test2").attr("src","./img/Home Page Domain Vectors.svg");
+  }
 });
-
 </script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <script>var typed = new Typed('.name', { strings: ["Home of Microsoft Student Partners Club SRM", ""], typeSpeed: 40, backSpeed: 40, loop: true }); </script>
-<!-- bootstrap -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<!-- end bootstrap -->
+
 </body>
 </html>
